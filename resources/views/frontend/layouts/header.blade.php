@@ -93,7 +93,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="about.html">About Us</a>
+                        <a href="{{ route('about') }}">About Us</a>
                     </li>
                     <li>
                         <a href="#0">Pages <i class="fa-regular fa-angle-down"></i></a>
@@ -166,7 +166,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="{{ route('home') }}#contact">Contact Us</a>
                     </li>
                 </ul>
                 <div class="shipping__item d-none d-sm-flex align-items-center">

@@ -30,13 +30,12 @@
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".3s">
                         <div class="footer__item">
-                            <h4 class="footer-title">vapes new collections</h4>
+                            <h4 class="footer-title">Rainbow collections</h4>
                             <ul>
-                                <li><a href="shop.html"><span></span>E-Cigarettes</a></li>
-                                <li><a href="shop.html"><span></span>Vape Pens</a></li>
-                                <li><a href="shop.html"><span></span>Pod Systems</a></li>
-                                <li><a href="shop.html"><span></span>Disposable Vapes</a></li>
-                                <li><a href="shop.html"><span></span>Nicotine Salt Devices</a></li>
+                                <li><a href="{{ route('products') }}"><span></span>Pouch colours</a></li>
+                                <li><a href="{{ route('products') }}"><span></span>Container colours</a></li>
+                                <li><a href="{{ route('products') }}"><span></span>Box colours</a></li>
+                                <li><a href="{{ route('products') }}#colours"><span></span>All shades</a></li>
                             </ul>
                         </div>
                     </div>
@@ -61,7 +60,7 @@
                 <a href="index.html" class="logo d-block">
                     <img src="{{ asset('frontend/assets/images/logo/logo.svg') }}" alt="logo">
                 </a>
-                <p>&copy; Copyright 2026 <a href="#0" class="primary-hover">odor</a> All Rights Reserved</p>
+                <p>&copy; Copyright 2026 <a href="#0" class="primary-hover">Rainbow Colors</a> All Rights Reserved</p>
                 <a href="#0" class="payment d-block image">
                     <img src="{{ asset('frontend/assets/images/icon/payment.png') }}" alt="icon">
                 </a>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odor - Vape Store WooCommerce HTML Template</title>
+    <title>@yield('title', 'Rainbow Colors') | Rangoli & Holi Colours</title>
     <!-- Favicon img -->
     <link rel="shortcut icon" href="{{ asset('frontend/assets/images/favicon.png') }}" type="image/x-icon">
     <!-- Bootstarp min css -->
@@ -88,6 +88,7 @@
     <script src=" {{ asset('frontend/assets/js/jquery.waypoints.js') }}"></script>
     <!-- Script Js -->
     <script src=" {{ asset('frontend/assets/js/script.js') }}"></script>
+    @stack('scripts')
 </body>
 
 </html>
