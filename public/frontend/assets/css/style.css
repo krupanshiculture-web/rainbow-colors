@@ -2274,7 +2274,7 @@ input {
 }
 
 .top__header {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   width: 100%;
   z-index: 99;
@@ -4616,7 +4616,7 @@ input {
 .footer__copy-text p {
   font-size: 14px;
   font-weight: 600;
-  color: var(--footer-color);
+  /* color: var(--footer-color); */
 }
 .footer__copy-text p a {
   color: var(--footer-color);

@@ -57,13 +57,13 @@
                 </div>
             </div>
             <div class="footer__copy-text pt-50 pb-50">
-                <a href="index.html" class="logo d-block">
-                    <img src="{{ asset('frontend/assets/images/logo/logo.svg') }}" alt="logo">
+                <a href="{{ route('home') }}" class="logo d-block">
+                    <img src="{{ asset('frontend/assets/images/logo/YELLOWonlyRainbowtm.png') }}" height="50" alt="logo">
                 </a>
                 <p>&copy; Copyright 2026 <a href="#0" class="primary-hover">Rainbow Colors</a> All Rights Reserved</p>
-                <a href="#0" class="payment d-block image">
+                {{-- <a href="#0" class="payment d-block image">
                     <img src="{{ asset('frontend/assets/images/icon/payment.png') }}" alt="icon">
-                </a>
+                </a> --}}
             </div>
         </div>
     </footer>

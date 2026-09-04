@@ -3,13 +3,14 @@
         <div class="container">
             <div class="top__wrapper">
                 <a href="{{ route('home') }}" class="main__logo">
-                    <img src="{{ asset('frontend/assets/images/logo/logo.svg') }}" alt="logo__image">
+                    <img src="{{ asset('frontend/assets/images/logo/YELLOWonlyRainbowtm.png') }}" height="50" alt="logo__image">
                 </a>
-                <div class="search__wrp">
+
+                <div class="account__wrap">
+                     <div class="search__wrp">
                     <input placeholder="Search for" aria-label="Search">
                     <button><i class="fa-solid fa-search"></i></button>
                 </div>
-                <div class="account__wrap">
                     <div class="account d-flex align-items-center">
                         <div class="user__icon">
                             <a href="#0">
@@ -22,7 +23,7 @@
                             </span>
                         </a>
                     </div>
-                    <div class="cart d-flex align-items-center">
+                    {{-- <div class="cart d-flex align-items-center">
                         <span class="cart__icon">
                             <i class="fa-regular fa-cart-shopping"></i>
                         </span>
@@ -53,7 +54,7 @@
                                 Germany
                             </option>
                         </select>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -67,36 +68,14 @@
                     <span></span>
                 </div>
                 <ul class="main-menu">
-                    <li>
-                        <a href="#0">Home <i class="fa-regular fa-angle-down"></i></a>
-                        <ul class="sub-menu">
-                            <li class="subtwohober">
-                                <a href="index.html">
-                                    Home One
-                                </a>
-                            </li>
-                            <li class="subtwohober">
-                                <a href="index-light.html">
-                                    Home One Light
-                                </a>
-                            </li>
-                            <li class="subtwohober">
-                                <a href="index-2.html">
-                                    Home Two
-                                </a>
-                            </li>
-                            <li class="subtwohober">
-                                <a href="index-2-light.html">
-                                    Home Two Light
-                                </a>
-                            </li>
-                        </ul>
+                  <li>
+                        <a href="{{ route('home') }}">Home</a>
                     </li>
                     <li>
                         <a href="{{ route('about') }}">About Us</a>
                     </li>
                     <li>
-                        <a href="#0">Pages <i class="fa-regular fa-angle-down"></i></a>
+                        <a href="{{ route('products') }}">Our Products <i class="fa-regular fa-angle-down"></i></a>
                         <ul class="sub-menu">
                             <li class="subtwohober">
                                 <a href="shop.html">
@@ -166,11 +145,11 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="{{ route('home') }}#contact">Contact Us</a>
+                        <a href="{{ route('contact') }}">Contact Us</a>
                     </li>
                 </ul>
                 <div class="shipping__item d-none d-sm-flex align-items-center">
-                    <div class="menu__right d-flex align-items-center">
+                    {{-- <div class="menu__right d-flex align-items-center">
                         <div class="thumb">
                             <img src="{{ asset('frontend/assets/images/flag/picking.png') }}" alt="image">
                         </div>
@@ -195,14 +174,14 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="menu__right d-flex align-items-center">
                         <div class="thumb">
                             <img src="{{ asset('frontend/assets/images/flag/shipping.png') }}" alt="image">
                         </div>
                         <div class="content">
                             <p>
-                                Free Shipping <br> on order <strong>over $100</strong>
+                             <strong>Free Shipping <br> on order</strong>
                             </p>
                         </div>
                     </div>

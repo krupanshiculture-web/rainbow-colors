@@ -195,7 +195,7 @@
         </section>
         <!-- Category area end here -->
 
-        <!-- View area start here -->
+        {{-- <!-- View area start here -->
         <section class="view-area">
             <div class="bg-image view__bg" data-background="{{ asset('frontend/assets/images/bg/view-bg.jpg') }}"></div>
             <div class="container">
@@ -245,7 +245,7 @@
                 </div>
             </div>
         </section>
-        <!-- View area end here -->
+        <!-- View area end here --> --}}
 
         <!-- Product area start here -->
         <section class="product-area pt-130 pb-130 mt-130">
@@ -805,7 +805,7 @@
         </section>
         <!-- Product area end here -->
 
-        <!-- Discount area start here -->
+        {{-- <!-- Discount area start here -->
         <section class="discount-area bg-image" data-background="{{ asset('frontend/assets/images/bg/discount-bg2.jpg') }}">
             <div class="container">
                 <div class="row align-items-center">
@@ -839,9 +839,9 @@
                 </div>
             </div>
         </section>
-        <!-- Discount area end here -->
+        <!-- Discount area end here --> --}}
 
-        <!-- Get now area start here -->
+        {{-- <!-- Get now area start here -->
         <section class="get-now-area pt-130 pb-130">
             <div class="container">
                 <div class="row align-items-center">
@@ -925,7 +925,7 @@
                 </div>
             </div>
         </section>
-        <!-- Get now area end here -->
+        <!-- Get now area end here --> --}}
 
         <!-- Text slider area start here -->
         <div class="container">
