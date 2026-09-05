@@ -40,7 +40,7 @@
                                     <a href="shop.html" class="btn-one" data-animation="fadeInUp"
                                         data-delay="1.8s"><span>Shop
                                             Now</span></a>
-                                    <a class="btn-one-light ml-20" href="shop-single.html" data-animation="fadeInUp"
+                                    <a class="btn-one-light ml-20" href="{{ route('product.details') }}" data-animation="fadeInUp"
                                         data-delay="1.9s"><span>View Details</span></a>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                                     <a href="shop.html" class="btn-one" data-animation="fadeInUp"
                                         data-delay="1.8s"><span>Shop
                                             Now</span></a>
-                                    <a class="btn-one-light ml-20" href="shop-single.html" data-animation="fadeInUp"
+                                    <a class="btn-one-light ml-20" href="{{ route('product.details') }}" data-animation="fadeInUp"
                                         data-delay="1.9s"><span>View
                                             Details</span></a>
                                 </div>
@@ -95,7 +95,7 @@
                                     <a href="shop.html" class="btn-one" data-animation="fadeInUp"
                                         data-delay="1.8s"><span>Shop
                                             Now</span></a>
-                                    <a class="btn-one-light ml-20" href="shop-single.html" data-animation="fadeInUp"
+                                    <a class="btn-one-light ml-20" href="{{ route('product.details') }}" data-animation="fadeInUp"
                                         data-delay="1.9s"><span>View
                                             Details</span></a>
                                 </div>
@@ -206,13 +206,13 @@
                                 <img src="{{ asset('frontend/assets/images/view/view-image1.jpg') }}" alt="image">
                             </div>
                             <div class="view__left-content sub-bg">
-                                <h2><a class="primary-hover" href="shop-single.html">The best e-liqued bundles</a>
+                                <h2><a class="primary-hover" href="{{ route('product.details') }}">The best e-liqued bundles</a>
                                 </h2>
                                 <p class="fw-600">Sell globally in minutes with localized currencies languages, and
                                     experie
                                     in every market. only a variety of vaping
                                     products</p>
-                                <a class="btn-two" href="shop-single.html"><span>Shop Now</span></a>
+                                <a class="btn-two" href="{{ route('product.details') }}"><span>Shop Now</span></a>
                                 <a class="off-btn" href="#0"><img class="mr-10" src="{{ asset('frontend/assets/images/icon/fire.svg') }}"
                                         alt="icon"> GET
                                     <span class="primary-color">25%
@@ -223,9 +223,9 @@
                     <div class="col-lg-6">
                         <div class="view__item mb-25 wow fadeInDown" data-wow-delay=".2s">
                             <div class="view__content">
-                                <h3><a class="primary-hover" href="shop-single.html">new to vapeing?</a></h3>
+                                <h3><a class="primary-hover" href="{{ route('product.details') }}">new to vapeing?</a></h3>
                                 <p>Whereas recognition of the inherent dignity</p>
-                                <a class="btn-two" href="shop-single.html"><span>Shop Now</span></a>
+                                <a class="btn-two" href="{{ route('product.details') }}"><span>Shop Now</span></a>
                             </div>
                             <div class="view__image">
                                 <img src="{{ asset('frontend/assets/images/view/view-image2.jpg') }}" alt="image">
@@ -233,9 +233,9 @@
                         </div>
                         <div class="view__item wow fadeInUp" data-wow-delay=".3s">
                             <div class="view__content">
-                                <h3><a class="primary-hover" href="shop-single.html">Vap mode</a></h3>
+                                <h3><a class="primary-hover" href="{{ route('product.details') }}">Vap mode</a></h3>
                                 <p>Whereas recognition of the inherent dignity</p>
-                                <a class="btn-two" href="shop-single.html"><span>Shop Now</span></a>
+                                <a class="btn-two" href="{{ route('product.details') }}"><span>Shop Now</span></a>
                             </div>
                             <div class="view__image">
                                 <img src="{{ asset('frontend/assets/images/view/view-image3.jpg') }}" alt="image">
@@ -280,14 +280,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image1.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image3.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">Menthol
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">Menthol
                                                 E-Cigarette Kit</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
                                         <div class="star mt-20">
@@ -308,14 +308,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image2.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image4.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">Disposable
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">Disposable
                                                 Sub-Ohm Tank</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
                                         <div class="star mt-20">
@@ -327,7 +327,7 @@
                                         </div>
 
                                     </div>
-                                    <a class="product__cart d-block bor-top" href="#0"><i
+                                    <a class="product__cart d-block bor-top" href="{{ route('product.details') }}"><i
                                             class="fa-regular fa-cart-shopping primary-color me-1"></i>
                                         <span>Add to
                                             cart</span></a>
@@ -336,14 +336,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image3.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image5.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">POP
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">POP
                                                 Extra
                                                 Strawberry</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
@@ -356,7 +356,7 @@
                                         </div>
 
                                     </div>
-                                    <a class="product__cart d-block bor-top" href="#0"><i
+                                    <a class="product__cart d-block bor-top" href="{{ route('product.details') }}"><i
                                             class="fa-regular fa-cart-shopping primary-color me-1"></i>
                                         <span>Add to
                                             cart</span></a>
@@ -365,14 +365,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image4.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image6.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">Battery
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">Battery
                                                 And
                                                 Charger Kit</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
@@ -394,14 +394,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image5.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image3.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">Pods
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">Pods
                                                 Sold
                                                 Separately</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
@@ -423,14 +423,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image6.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image4.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">GeekVape
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">GeekVape
                                                 Obelisk Pod</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
                                         <div class="star mt-20">
@@ -451,14 +451,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image7.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image4.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">POP Extra
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">POP Extra
                                                 Strawberry</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
                                         <div class="star mt-20">
@@ -479,14 +479,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image8.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image4.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">100ml
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">100ml
                                                 Nic
                                                 Salt Juice</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
@@ -512,14 +512,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image4.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image6.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">Battery
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">Battery
                                                 And
                                                 Charger Kit</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
@@ -541,14 +541,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image5.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image3.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">Pods
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">Pods
                                                 Sold
                                                 Separately</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
@@ -570,14 +570,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image6.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image4.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">GeekVape
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">GeekVape
                                                 Obelisk Pod</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
                                         <div class="star mt-20">
@@ -598,14 +598,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image7.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image4.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">POP Extra
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">POP Extra
                                                 Strawberry</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
                                         <div class="star mt-20">
@@ -626,14 +626,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image8.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image4.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">100ml
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">100ml
                                                 Nic
                                                 Salt Juice</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
@@ -659,14 +659,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image1.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image3.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">Menthol
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">Menthol
                                                 E-Cigarette Kit</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
                                         <div class="star mt-20">
@@ -687,14 +687,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image2.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image4.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">Disposable
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">Disposable
                                                 Sub-Ohm Tank</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
                                         <div class="star mt-20">
@@ -715,14 +715,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image3.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image5.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">POP
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">POP
                                                 Extra
                                                 Strawberry</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
@@ -744,14 +744,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image7.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image4.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">POP Extra
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">POP Extra
                                                 Strawberry</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>
                                         <div class="star mt-20">
@@ -772,14 +772,14 @@
                             <div class="col-xxl-3 col-xl-4 col-md-6">
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                    <a href="shop-single.html" class="product__image pt-20 d-block">
+                                    <a href="{{ route('product.details') }}" class="product__image pt-20 d-block">
                                         <img class="font-image" src="{{ asset('frontend/assets/images/product/product-image8.png') }}"
                                             alt="image">
                                         <img class="back-image" src="{{ asset('frontend/assets/images/product/product-image4.png') }}"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
-                                        <h4 class="mb-15"><a class="primary-hover" href="shop-single.html">100ml
+                                        <h4 class="mb-15"><a class="primary-hover" href="{{ route('product.details') }}">100ml
                                                 Nic
                                                 Salt Juice</a></h4>
                                         <del>$74.50</del><span class="primary-color ml-10">$49.50</span>

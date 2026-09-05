@@ -19,6 +19,11 @@ class HomeController extends Controller
         return view('frontend.home.products');
     }
 
+    public function productDetails()
+    {
+        return view('frontend.home.shop-single');
+    }
+
      public function contact()
     {
         return view('frontend.layouts.contact');

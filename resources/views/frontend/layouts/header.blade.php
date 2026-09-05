@@ -75,7 +75,7 @@
                         <a href="{{ route('about') }}">About Us</a>
                     </li>
                     <li class="product-menu">
-                        <a href="{{ route('products') }}">Our Products <i class="fa-regular fa-angle-down"></i></a>
+                        <a href="{{ route('products') }}">Category <i class="fa-regular fa-angle-down"></i></a>
                         @php
                             $productMenu = [
                                 'Pouch' => [
@@ -126,33 +126,17 @@
                             @endforeach
                         </ul>
                     </li>
-                    <li>
-                        <a href="#0">Blog <i class="fa-regular fa-angle-down"></i></a>
-                        <ul class="sub-menu">
-                            <li class="subtwohober">
-                                <a href="#">
-                                    Blog Stander
-                                </a>
-                            </li>
-                            <li class="subtwohober">
-                                <a href="#">
-                                    Blog Grid
-                                </a>
-                            </li>
-                            <li class="subtwohober">
-                                <a href="#">
-                                    Blog List
-                                </a>
-                            </li>
-                            <li class="subtwohober">
-                                <a href="#">
-                                    Blog Single
-                                </a>
-                            </li>
-                        </ul>
+                     <li>
+                        <a href="{{ route('products') }}">Our Products</a>
+                    </li>
+                     <li>
+                        <a href="{{ route('home') }}">Gallery</a>
+                    </li>
+                     <li>
+                        <a href="{{ route('home') }}">Blog</a>
                     </li>
                     <li>
-                        <a href="{{ route('contact') }}">Contact Us</a>
+                        <a href="{{ route('home') }}">Download Catalogue</a>
                     </li>
                 </ul>
                 <div class="shipping__item d-none d-sm-flex align-items-center">
