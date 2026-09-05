@@ -132,6 +132,9 @@
                      <li>
                         <a href="{{ route('home') }}">Gallery</a>
                     </li>
+                    <li>
+                        <a href="{{ route('contact') }}">Contact Us</a>
+                    </li>
                      <li>
                         <a href="{{ route('home') }}">Blog</a>
                     </li>
