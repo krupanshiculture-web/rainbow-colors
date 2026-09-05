@@ -130,7 +130,7 @@
                         <a href="{{ route('products') }}">Our Products</a>
                     </li>
                      <li>
-                        <a href="{{ route('home') }}">Gallery</a>
+                        <a href="{{ route('gallery') }}">Gallery</a>
                     </li>
                     <li>
                         <a href="{{ route('contact') }}">Contact Us</a>

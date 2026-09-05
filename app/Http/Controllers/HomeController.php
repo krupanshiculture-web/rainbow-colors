@@ -29,6 +29,11 @@ class HomeController extends Controller
         return view('frontend.layouts.contact');
     }
 
+    public function gallery()
+    {
+        return view('frontend.home.gallery');
+    }
+
     public function error()
     {
         return view('frontend.home.error');
