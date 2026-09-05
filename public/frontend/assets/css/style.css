@@ -4895,3 +4895,95 @@ input {
     margin: 15px 0;
   }
 }
+
+
+.gallery-page-banner {
+            margin-top: 180px;
+            padding: 80px 0 70px;
+            /* background: linear-gradient(135deg, #fef4ec 0%, #f8d7b8 100%); */
+            text-align: center;
+        }
+
+        .gallery-page-banner h2 {
+            margin: 0;
+            color: #2b1f1d;
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .gallery-breadcrumb {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 18px;
+            color: #6e4b3d;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .gallery-breadcrumb a,
+        .gallery-breadcrumb span {
+            color: #6e4b3d;
+            text-decoration: none;
+        }
+
+        .gallery-page-area {
+            padding: 70px 0 90px;
+            /* background: #fffdfa; */
+        }
+
+        .gallery-page-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .gallery-page-item {
+            display: block;
+            overflow: hidden;
+            border-radius: 16px;
+            /* background: #f8f1eb; */
+            box-shadow: 0 16px 36px rgba(48, 29, 17, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-page-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 44px rgba(48, 29, 17, 0.14);
+        }
+
+        .gallery-page-item img {
+            width: 100%;
+            height: 100%;
+            min-height: 280px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-page-item:hover img {
+            transform: scale(1.04);
+        }
+
+        @media (max-width: 991px) {
+            .gallery-page-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 575px) {
+            .gallery-page-banner {
+                margin-top: 130px;
+                padding: 60px 0 50px;
+            }
+
+            .gallery-page-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .gallery-page-area {
+                padding: 50px 0 70px;
+            }
+        }
