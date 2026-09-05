@@ -20,7 +20,7 @@
             <div class="swiper banner-two__slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="slide-bg" data-background="{{ asset('frontend/assets/images/banner/banner-two-image1.jpg') }}"></div>
+                        <div class="slide-bg" data-background="{{ asset('frontend/assets/images/banner/banner-two-image1.svg') }}"></div>
                         <div class="container">
                             <div class="banner-two__content">
                                 <h4 data-animation="fadeInUp" data-delay="1s"><img src="{{ asset('frontend/assets/images/icon/fire.svg') }}"
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide-bg" data-background="{{ asset('frontend/assets/images/banner/banner-two-image2.jpg') }}"></div>
+                        <div class="slide-bg" data-background="{{ asset('frontend/assets/images/banner/banner-two-image2.svg') }}"></div>
                         <div class="container">
                             <div class="banner-two__content">
                                 <h4 data-animation="fadeInUp" data-delay="1s"><img src="{{ asset('frontend/assets/images/icon/fire.svg') }}"
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide-bg" data-background="{{ asset('frontend/assets/images/banner/banner-two-image3.jpg') }}"></div>
+                        <div class="slide-bg" data-background="{{ asset('frontend/assets/images/banner/banner-two-image3.svg') }}"></div>
                         <div class="container">
                             <div class="banner-two__content">
                                 <h4 data-animation="fadeInUp" data-delay="1s"><img src="{{ asset('frontend/assets/images/icon/fire.svg') }}"
@@ -113,7 +113,7 @@
         <!-- Banner area end here -->
 
         <!-- Category area start here -->
-        <section class="category-area category-two pb-130 pt-130">
+        <section class="category-area category-two  pt-130">
             <div class="container">
                 <div class="bor-bottom pb-130">
                     <div class="sub-title text-center mb-65 wow fadeInUp" data-wow-delay=".1s">
@@ -248,7 +248,7 @@
         <!-- View area end here --> --}}
 
         <!-- Product area start here -->
-        <section class="product-area pt-130 pb-130 mt-130">
+        <section class="product-area pt-10 pb-130 mt-130">
             <div class="container">
                 <div
                     class="product__wrp pb-30 mb-65 bor-bottom d-flex flex-wrap align-items-center justify-content-xl-between justify-content-center">

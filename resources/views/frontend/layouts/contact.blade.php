@@ -32,18 +32,14 @@
                                 Ut enim ad minim.</p>
                             <div class="arry"><img src="assets/images/contact/arry.png" alt=""></div>
                             <ul>
-                                <li><a href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&amp;hl=en_US&amp;ll=18.672105000000013%2C105.68673800000003&amp;z=17"
-                                        target="_blank"><i class="fa-solid fa-location-dot"></i>785 15h Street,
-                                        Office
-                                        478
-                                        Berlin </a>
+                                <li><a href="https://maps.app.goo.gl/8Gct2YzDhgQRhJzu9"
+                                        target="_blank"><i class="fa-solid fa-location-dot"></i>
+                                201/p, Vanar Jamla Road, Vasedi,<br>Chhota Udepur - 391165 </a>
                                 </li>
-                                <li><a href="tel:1-732-798-0976"><i class="fa-solid fa-phone-volume"></i>+1 800
-                                        555 45
-                                        65</a>
+                                <li><a href="tel:91-777-888-4447"><i class="fa-solid fa-phone-volume"></i>+91-777-888-4447</a>
                                 </li>
-                                <li><a href="mailto:company.info@mail.com"><i
-                                            class="fa-solid fa-envelope"></i>info.stoky@company.com</a></li>
+                                <li><a href="mailto:info.rainbowcolorss@gmail.com"><i
+                                            class="fa-solid fa-envelope"></i>info.rainbowcolorss@gmail.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -75,9 +71,11 @@
 
         <!-- Contact map area start here -->
         <div class="google-map">
-            <iframe
+            {{-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059445134!2d-74.2598661379975!3d40.697149417741365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1670395681365!5m2!1sen!2sbd"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> --}}
+
+                <iframe loading="lazy" src="https://maps.google.com/maps?q=Varun%20Minerals%2082H9%2BP4M%2C%20Vasedi%2C%20Gujarat%20391165&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="Varun Minerals 82H9+P4M, Vasedi, Gujarat 391165" aria-label="Varun Minerals 82H9+P4M, Vasedi, Gujarat 391165"></iframe>
         </div>
         <!-- Contact map area end here -->
     </main>
