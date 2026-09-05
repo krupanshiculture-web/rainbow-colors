@@ -38,6 +38,11 @@ CSS TABLE OF CONTENTS
 	});
 	$(".main-menu li a").on("click", function (e) {
 		var element = $(this).parent("li");
+		var submenu = element.children("ul");
+		if (!submenu.length) {
+			return;
+		}
+		e.preventDefault();
 		if (element.hasClass("open")) {
 			element.removeClass("open");
 			element.find("li").removeClass("open");

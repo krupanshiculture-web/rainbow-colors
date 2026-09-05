@@ -74,71 +74,78 @@
                     <li>
                         <a href="{{ route('about') }}">About Us</a>
                     </li>
-                    <li>
+                    <li class="product-menu">
                         <a href="{{ route('products') }}">Our Products <i class="fa-regular fa-angle-down"></i></a>
+                        @php
+                            $productMenu = [
+                                'Pouch' => [
+                                    '100gm' => ['Red', 'Sky blue', 'Blue', 'Purple', 'Pink', 'Rani Pink', 'Green', 'Orange', 'Rose Pink', 'Yellow', 'Parrot', 'White'],
+                                    '250gm' => ['Red', 'Sky blue', 'Blue', 'Purple', 'Pink', 'Rani Pink', 'Green', 'Orange', 'Rose Pink', 'Yellow', 'Parrot', 'White'],
+                                    '500gm' => ['Red', 'Sky blue', 'Blue', 'Purple', 'Pink', 'Rani Pink', 'Green', 'Orange', 'Rose Pink', 'Yellow', 'Parrot', 'White'],
+                                ],
+                                'Container' => [
+                                    '250gm - Sparsh' => ['Blue', 'Green', 'Orange', 'Parrot', 'Pink', 'Purple', 'Rani Pink', 'Red', 'Sky blue', 'Yellow'],
+                                    '500gm - Signature' => ['Blue', 'Green', 'Orange', 'Parrot', 'Pink', 'Purple', 'Rani Pink', 'Red', 'Sky blue', 'Yellow', 'White', 'Black'],
+                                    '1kg - Harmon' => ['Blue', 'Green', 'Orange', 'Parrot', 'Pink', 'Purple', 'Rani Pink', 'Red', 'Sky blue', 'Yellow', 'White', 'Black'],
+                                    '2kg - Heritage' => ['Blue', 'Green', 'Orange', 'Parrot', 'Pink', 'Purple', 'Rani Pink', 'Red', 'Sky blue', 'Yellow'],
+                                    '500gm - Neo P' => ['Fuzzy Lemon', 'Electric orange', 'Toxic Green', 'Pink Blast', 'Cosmic purple'],
+                                    '250gm - Neo Pop' => ['Fuzzy Lemon', 'Electric orange', 'Toxic Green', 'Pink Blast'],
+                                ],
+                                'Box' => [
+                                    '250 Sparsh' => ['4 Dabi', '8 Dabi', '10 Dabi'],
+                                    '500 Signature' => ['2 Dabi', '4 Dabi', '5 Dabi'],
+                                    'Neopop' => ['250 - 4 Dabi', '500 - 4 Dabi'],
+                                ],
+                            ];
+                        @endphp
                         <ul class="sub-menu">
-                            <li class="subtwohober">
-                                <a href="shop.html">
-                                    Shop Leftbar
-                                </a>
-                            </li>
-                            <li class="subtwohober">
-                                <a href="shop-2.html">
-                                    Shop Rightbar
-                                </a>
-                            </li>
-                            <li class="subtwohober">
-                                <a href="shop-single.html">
-                                    Shop Single
-                                </a>
-                            </li>
-                            <li class="subtwohober">
-                                <a href="cart.html">
-                                    Cart Page
-                                </a>
-                            </li>
-                            <li class="subtwohober">
-                                <a href="checkout.html">
-                                    Checkout Page
-                                </a>
-                            </li>
-                            <li class="subtwohober">
-                                <a href="register.html">
-                                    Register
-                                </a>
-                            </li>
-                            <li class="subtwohober">
-                                <a href="login.html">
-                                    Login
-                                </a>
-                            </li>
-                            <li class="subtwohober">
-                                <a href="error.html">
-                                    404 Error
-                                </a>
-                            </li>
+                            @foreach ($productMenu as $category => $sizes)
+                                <li class="subtwohober">
+                                    <a href="{{ route('products', ['category' => strtolower($category)]) }}">
+                                        {{ $category }} <i class="fa-regular fa-angle-right"></i>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        @foreach ($sizes as $size => $colours)
+                                            <li class="subtwohober">
+                                                <a href="{{ route('products', ['category' => strtolower($category), 'size' => $size]) }}">
+                                                    {{ $size }} <i class="fa-regular fa-angle-right"></i>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    @foreach ($colours as $colour)
+                                                        <li class="subtwohober">
+                                                            <a href="{{ route('products', ['category' => strtolower($category), 'size' => $size, 'colour' => strtolower($colour)]) }}">
+                                                                {{ $colour }}
+                                                            </a>
+                                                        </li>
+                                                    @endforeach
+                                                </ul>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </li>
+                            @endforeach
                         </ul>
                     </li>
                     <li>
                         <a href="#0">Blog <i class="fa-regular fa-angle-down"></i></a>
                         <ul class="sub-menu">
                             <li class="subtwohober">
-                                <a href="blog.html">
+                                <a href="#">
                                     Blog Stander
                                 </a>
                             </li>
                             <li class="subtwohober">
-                                <a href="blog-grid.html">
+                                <a href="#">
                                     Blog Grid
                                 </a>
                             </li>
                             <li class="subtwohober">
-                                <a href="blog-list.html">
+                                <a href="#">
                                     Blog List
                                 </a>
                             </li>
                             <li class="subtwohober">
-                                <a href="blog-single.html">
+                                <a href="#">
                                     Blog Single
                                 </a>
                             </li>
