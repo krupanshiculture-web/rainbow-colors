@@ -692,5 +692,4 @@
             <!-- ==== / footer end ==== -->
         </div>
     </div>
-    </div>
 @endsection
