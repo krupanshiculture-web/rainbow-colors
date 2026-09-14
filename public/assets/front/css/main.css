@@ -101,24 +101,37 @@
 } */
 
 :root {
-    --inter: "Poppins", sans-serif;
-    --theme-font: var(--inter);
+    --font-primary: "Poppins", sans-serif;
+
+    --theme-font: var(--font-primary);
+
+    /* Brand */
     --theme-bg: #292345;
-    --theme-color: #ffffff;
-    --white: #ffffff;
-    --black: #292345;
+    --theme-color: #FFFFFF;
+
     --primary-color: #FDD200;
-    --secondary-color: #757575;
-    --tertiary-color: #0e0e0e;
-    --quaternary-color: #040404;
-    --quinary-color: #c1c1c1;
-    --senary-color: #191919;
-    --septenary-color: #101010;
-    --octonary-color: #1a1a1a;
-    --nonary-color: #d9d9d9;
+    --secondary-color: #F4F2FA;
+
+    /* Rainbow */
+    --rainbow-purple: #292345;
+    --rainbow-yellow: #FDD200;
+    --rainbow-pink: #FF4F9A;
+    --rainbow-orange: #FF7A00;
+    --rainbow-blue: #20A4F3;
+    --rainbow-green: #36C96F;
+
+    /* UI */
+    --white: #FFFFFF;
+    --black: #292345;
+    --dark-purple: #211B38;
+    --purple-light: #5A4E8C;
+    --border-color: rgba(255, 255, 255, 0.15);
+    --muted-color: #C8C4D8;
+
     --transition: all 0.3s ease-in-out;
-    --shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    --shadow-secondary: 0 0 31px rgba(0, 0, 0, 0.1)
+
+    --shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+    --shadow-secondary: 0 20px 60px rgba(41, 35, 69, 0.35);
 }
 
 /* ==== 
@@ -1111,7 +1124,8 @@ i {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #9370db;
+  /* border-top-color: #9370db; */
+  border-top-color: var(--rainbow-yellow);
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -1125,7 +1139,8 @@ i {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #ba55d3;
+  /* border-top-color: #ba55d3; */
+  border-top-color: var(--rainbow-pink);
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
@@ -1139,7 +1154,8 @@ i {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #ff00ff;
+  /* border-top-color: #ff00ff; */
+  border-top-color: var(--rainbow-blue);
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
@@ -7278,3 +7294,2774 @@ i {
 /* ==== 
  --------- (7.0) responsive styles end ---------
  ==== *//*# sourceMappingURL=main.css.map */
+
+ /* =========================================
+   RAINBOW COLORS - HERO
+========================================= */
+
+.rainbow-hero {
+    min-height: auto;
+    padding: 250px 0 100px;
+    background:
+        radial-gradient(
+            circle at 78% 48%,
+            rgba(253, 210, 0, 0.10),
+            transparent 28%
+        ),
+        #292345;
+    position: relative;
+    overflow: hidden;
+}
+
+.rainbow-hero__content {
+    position: relative;
+    z-index: 5;
+}
+
+.rainbow-hero__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 17px;
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 50px;
+
+    color: #FDD200;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.rainbow-hero__title {
+    max-width: 760px;
+    margin: 0;
+
+    font-size: clamp(52px, 6vw, 88px);
+    line-height: .98;
+    font-weight: 700;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.rainbow-hero__title span {
+    color: transparent;
+    -webkit-text-stroke: 2px #FDD200;
+}
+
+.rainbow-hero__title strong {
+    color: #FDD200;
+    font-weight: 800;
+}
+
+.rainbow-hero__text {
+    max-width: 540px;
+    margin: 28px 0 0;
+
+    color: #C8C4D8;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.rainbow-hero__actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.rainbow-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 25px;
+    border-radius: 50px;
+
+    background: #FDD200;
+    color: #292345;
+
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    transition: all .3s ease;
+}
+
+.rainbow-btn:hover {
+    background: #fff;
+    color: #292345;
+    transform: translateY(-3px);
+}
+
+.rainbow-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.rainbow-link:hover {
+    color: #FDD200;
+}
+
+/* =========================================================
+   RAINBOW COLORS
+   PREMIUM HERO PRODUCT VISUAL
+========================================================= */
+
+.rainbow-hero__visual {
+    min-height: 560px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: visible !important;
+}
+
+
+/* =========================================================
+   BACKGROUND GLOW
+========================================================= */
+
+.rainbow-hero__glow {
+    position: absolute;
+
+    width: 480px;
+    height: 480px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(253,210,0,.25) 0%,
+            rgba(255,79,154,.12) 35%,
+            rgba(32,164,243,.10) 55%,
+            transparent 72%
+        );
+
+    filter: blur(35px);
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   MAIN CIRCLE
+========================================================= */
+
+.rainbow-hero__circle {
+    position: absolute;
+
+    width: 530px;
+    height: 530px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-42%, -50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(90,78,140,.18),
+            rgba(33,27,56,.85) 70%
+        );
+
+    border: 7px solid rgba(255,255,255,.12);
+
+    box-shadow:
+        0 0 0 14px rgba(253,210,0,.035),
+        0 0 60px rgba(253,210,0,.08),
+        0 35px 90px rgba(0,0,0,.35);
+
+    z-index: 1;
+
+    overflow: visible !important;
+}
+
+
+/* GOLD OUTER RING */
+
+.rainbow-hero__circle::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -14px;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(253,210,0,.28);
+
+    transform: rotate(-18deg);
+}
+
+
+/* SECOND SUBTLE RING */
+
+.rainbow-hero__circle::after {
+    content: "";
+
+    position: absolute;
+
+    inset: -22px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,.05);
+}
+
+
+/* =========================================================
+   PRODUCT
+========================================================= */
+
+.rainbow-product {
+    position: absolute;
+
+    width: 1100px;
+
+    left: 42%;
+    top: 50%;
+
+    transform:
+        translate(-38%, -50%)
+        rotate(7deg);
+
+    z-index: 10;
+
+    pointer-events: none;
+}
+
+
+/* PRODUCT IMAGE */
+
+.rainbow-product img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 28px 22px rgba(0,0,0,.32))
+        drop-shadow(0 10px 35px rgba(253,210,0,.16));
+}
+
+
+/* =========================================================
+   PRODUCT FLOAT ANIMATION
+========================================================= */
+
+@keyframes rainbowProductFloat {
+
+    0% {
+        transform:
+            translate(-38%, -50%)
+            rotate(7deg);
+    }
+
+    50% {
+        transform:
+            translate(-38%, -53%)
+            rotate(8deg);
+    }
+
+    100% {
+        transform:
+            translate(-38%, -50%)
+            rotate(7deg);
+    }
+}
+
+.rainbow-product {
+    animation:
+        rainbowProductFloat 5s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   POWDER EFFECTS
+========================================================= */
+
+.powder {
+    position: absolute;
+
+    z-index: 4;
+
+    pointer-events: none;
+
+    border-radius: 50%;
+
+    filter: blur(8px);
+
+    opacity: .75;
+}
+
+
+/* =========================================================
+   YELLOW POWDER
+========================================================= */
+
+.powder-yellow {
+    width: 180px;
+    height: 120px;
+
+    top: 5%;
+    right: 20%;
+
+    background:
+        radial-gradient(
+            ellipse,
+            #FDD200 0%,
+            rgba(253,210,0,.7) 35%,
+            transparent 72%
+        );
+
+    transform:
+        rotate(-25deg);
+
+    filter: blur(14px);
+}
+
+
+/* =========================================================
+   PINK POWDER
+========================================================= */
+
+.powder-pink {
+    width: 170px;
+    height: 100px;
+
+    left: 13%;
+    top: 48%;
+
+    background:
+        radial-gradient(
+            ellipse,
+            #FF4F9A 0%,
+            rgba(255,79,154,.65) 40%,
+            transparent 72%
+        );
+
+    transform: rotate(20deg);
+
+    filter: blur(15px);
+}
+
+
+/* =========================================================
+   BLUE POWDER
+========================================================= */
+
+.powder-blue {
+    width: 150px;
+    height: 100px;
+
+    right: 2%;
+    top: 43%;
+
+    background:
+        radial-gradient(
+            ellipse,
+            #20A4F3 0%,
+            rgba(32,164,243,.65) 40%,
+            transparent 72%
+        );
+
+    transform: rotate(-20deg);
+
+    filter: blur(15px);
+}
+
+
+/* =========================================================
+   ORANGE POWDER
+========================================================= */
+
+.powder-orange {
+    width: 190px;
+    height: 110px;
+
+    right: 0;
+    bottom: 13%;
+
+    background:
+        radial-gradient(
+            ellipse,
+            #FF7A00 0%,
+            rgba(255,122,0,.65) 38%,
+            transparent 72%
+        );
+
+    transform: rotate(18deg);
+
+    filter: blur(15px);
+}
+
+
+/* =========================================================
+   POWDER LITTLE PARTICLES
+========================================================= */
+
+.powder-yellow::before,
+.powder-pink::before,
+.powder-blue::before,
+.powder-orange::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: inherit;
+
+    box-shadow:
+        35px -20px 0 3px currentColor,
+        70px 15px 0 1px currentColor,
+        -25px 25px 0 2px currentColor,
+        95px -35px 0 1px currentColor;
+
+}
+
+
+/* =========================================================
+   FLOATING DOTS
+========================================================= */
+
+.color-dot {
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    z-index: 15;
+
+    box-shadow:
+        0 0 18px rgba(255,255,255,.10);
+}
+
+
+/* Yellow */
+
+.dot-yellow {
+    top: 11%;
+    right: 4%;
+
+    background: #FDD200;
+}
+
+
+/* Pink */
+
+.dot-pink {
+    bottom: 14%;
+    left: 8%;
+
+    background: #FF4F9A;
+}
+
+
+/* Blue */
+
+.dot-blue {
+    top: 39%;
+    left: 0%;
+
+    background: #20A4F3;
+}
+
+
+/* Orange */
+
+.dot-orange {
+    bottom: 7%;
+    right: 7%;
+
+    background: #FF7A00;
+}
+
+
+/* =========================================================
+   SMALL DECORATIVE RING
+========================================================= */
+
+.rainbow-hero__visual::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 28px;
+    height: 28px;
+
+    left: 2%;
+    bottom: 29%;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(253,210,0,.45);
+
+    box-shadow:
+        0 0 0 7px rgba(253,210,0,.035);
+
+    z-index: 12;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media only screen and (max-width: 991px) {
+
+    .rainbow-hero__visual {
+        min-height: 500px;
+
+        margin-top: 50px;
+    }
+
+    .rainbow-hero__circle {
+        width: 390px;
+        height: 390px;
+    }
+
+    .rainbow-product {
+        width: 500px;
+
+        left: 51%;
+    }
+
+    .powder-yellow {
+        right: 15%;
+    }
+
+    .powder-orange {
+        right: 0;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media only screen and (max-width: 575px) {
+
+    .rainbow-hero__visual {
+        min-height: 390px;
+
+        margin-top: 30px;
+    }
+
+    .rainbow-hero__circle {
+        width: 285px;
+        height: 285px;
+
+        transform:
+            translate(-50%, -50%);
+
+        border-width: 5px;
+    }
+
+    .rainbow-product {
+        width: 340px;
+
+        left: 53%;
+
+        transform:
+            translate(-38%, -50%)
+            rotate(6deg);
+    }
+
+    .rainbow-hero__glow {
+        width: 300px;
+        height: 300px;
+    }
+
+    .powder {
+        opacity: .55;
+    }
+
+    .powder-yellow {
+        width: 110px;
+        height: 70px;
+    }
+
+    .powder-pink {
+        width: 100px;
+        height: 60px;
+    }
+
+    .powder-blue {
+        width: 100px;
+        height: 60px;
+    }
+
+    .powder-orange {
+        width: 110px;
+        height: 65px;
+    }
+
+    .color-dot {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* Remove old Xpovio hero positioning */
+.rainbow-hero .banner-one-thumb,
+.rainbow-hero .banner-left-text,
+.rainbow-hero .banner-right-text,
+.rainbow-hero .star,
+.rainbow-hero .video-frame {
+    display: none !important;
+}
+
+/* =========================================================
+   RAINBOW COLORS
+   ABOUT SECTION
+========================================================= */
+
+.rainbow-about {
+    position: relative;
+
+    padding: 130px 0;
+
+    background: #F7F5FB;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   VISUAL
+========================================================= */
+
+.rainbow-about__visual {
+    position: relative;
+
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Main image */
+
+.rainbow-about__image {
+    position: relative;
+
+    width: 470px;
+    height: 540px;
+
+    z-index: 3;
+
+    overflow: hidden;
+
+    border-radius: 235px 235px 35px 35px;
+
+    background: #292345;
+
+    box-shadow:
+        0 25px 70px rgba(41,35,69,.18);
+}
+
+
+.rainbow-about__image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .7s ease;
+}
+
+
+.rainbow-about__image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   DECORATIVE SHAPES
+========================================================= */
+
+.rainbow-about__shape {
+    position: absolute;
+
+    border-radius: 50%;
+
+    z-index: 1;
+}
+
+
+/* Yellow */
+
+.rainbow-about__shape--yellow {
+
+    width: 150px;
+    height: 150px;
+
+    top: 4%;
+    left: 2%;
+
+    background: #FDD200;
+
+    opacity: .95;
+}
+
+
+/* Pink */
+
+.rainbow-about__shape--pink {
+
+    width: 180px;
+    height: 180px;
+
+    right: 0;
+    bottom: 2%;
+
+    background: #FF4F9A;
+
+    opacity: .85;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.rainbow-about__badge {
+
+    position: absolute;
+
+    right: 0;
+    top: 12%;
+
+    width: 145px;
+    height: 145px;
+
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 50%;
+
+    background: #292345;
+
+    color: #fff;
+
+    border: 6px solid #FDD200;
+
+    box-shadow:
+        0 15px 35px rgba(41,35,69,.25);
+}
+
+
+.badge-number {
+
+    display: block;
+
+    color: #FDD200;
+
+    font-size: 30px;
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+
+.badge-text {
+
+    margin-top: 8px;
+
+    color: #C8C4D8;
+
+    font-size: 10px;
+    line-height: 1.4;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.rainbow-about__content {
+    max-width: 620px;
+
+    padding-left: 35px;
+}
+
+
+/* Section label */
+
+.rainbow-section-label {
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    color: #5A4E8C;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.rainbow-section-label i {
+    color: #FDD200;
+}
+
+
+/* Heading */
+
+.rainbow-about__content h2 {
+
+    margin: 0;
+
+    color: #292345;
+
+    font-size: clamp(48px, 5vw, 72px);
+
+    line-height: .98;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    text-transform: uppercase;
+}
+
+
+.rainbow-about__content h2 span {
+
+    display: block;
+
+    color: transparent;
+
+    -webkit-text-stroke: 2px #292345;
+}
+
+
+/* Lead */
+
+.rainbow-about__lead {
+
+    margin-top: 30px;
+
+    color: #292345;
+
+    font-size: 21px;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+}
+
+
+.rainbow-about__lead strong {
+    color: #FF4F9A;
+}
+
+
+/* Paragraph */
+
+.rainbow-about__content > p:not(.rainbow-about__lead) {
+
+    max-width: 570px;
+
+    margin-top: 15px;
+
+    color: #6F6A7D;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.rainbow-about__features {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+.rainbow-about__feature {
+
+    padding: 18px 14px;
+
+    background: #fff;
+
+    border: 1px solid rgba(41,35,69,.08);
+
+    border-radius: 15px;
+
+    transition: all .3s ease;
+}
+
+
+.rainbow-about__feature:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(41,35,69,.10);
+}
+
+
+.feature-icon {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+}
+
+
+.feature-icon.yellow {
+    background: rgba(253,210,0,.15);
+    color: #D6AE00;
+}
+
+
+.feature-icon.pink {
+    background: rgba(255,79,154,.12);
+    color: #FF4F9A;
+}
+
+
+.feature-icon.blue {
+    background: rgba(32,164,243,.12);
+    color: #20A4F3;
+}
+
+
+.rainbow-about__feature h5 {
+
+    margin: 0 0 5px;
+
+    color: #292345;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.rainbow-about__feature p {
+
+    margin: 0;
+
+    color: #8A8696;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.rainbow-about__button {
+
+    margin-top: 35px;
+}
+
+
+.rainbow-about-btn {
+
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px 24px;
+
+    border-radius: 50px;
+
+    background: #292345;
+
+    color: #fff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    transition: all .3s ease;
+}
+
+
+.rainbow-about-btn:hover {
+
+    background: #FDD200;
+
+    color: #292345;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media only screen and (max-width: 991px) {
+
+    .rainbow-about {
+
+        padding: 90px 0;
+    }
+
+    .rainbow-about__visual {
+
+        min-height: 500px;
+
+        margin-bottom: 40px;
+    }
+
+    .rainbow-about__image {
+
+        width: 420px;
+        height: 480px;
+    }
+
+    .rainbow-about__content {
+
+        padding-left: 0;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media only screen and (max-width: 575px) {
+
+    .rainbow-about {
+
+        padding: 70px 0;
+    }
+
+    .rainbow-about__visual {
+
+        min-height: 390px;
+    }
+
+    .rainbow-about__image {
+
+        width: 290px;
+        height: 360px;
+
+        border-radius:
+            145px 145px 25px 25px;
+    }
+
+    .rainbow-about__shape--yellow {
+
+        width: 90px;
+        height: 90px;
+
+        left: 3%;
+    }
+
+    .rainbow-about__shape--pink {
+
+        width: 100px;
+        height: 100px;
+
+        right: 2%;
+    }
+
+    .rainbow-about__badge {
+
+        width: 105px;
+        height: 105px;
+
+        border-width: 4px;
+    }
+
+    .badge-number {
+
+        font-size: 22px;
+    }
+
+    .badge-text {
+
+        font-size: 8px;
+    }
+
+    .rainbow-about__content h2 {
+
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+    .rainbow-about__content h2 span {
+
+        -webkit-text-stroke: 1px #292345;
+    }
+
+    .rainbow-about__lead {
+
+        font-size: 18px;
+    }
+
+    .rainbow-about__features {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================================
+   RAINBOW COLORS
+   HOME PRODUCTS SECTION
+========================================================= */
+
+.rainbow-products {
+    position: relative;
+
+    padding: 125px 0 105px;
+
+    background: #292345;
+
+    overflow: hidden;
+}
+
+
+/* Background glow */
+
+.rainbow-products::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -250px;
+    right: -180px;
+
+    border-radius: 50%;
+
+    background: #FF4F9A;
+
+    opacity: .07;
+
+    filter: blur(90px);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.rainbow-products__heading {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    margin-bottom: 60px;
+}
+
+
+.rainbow-products__eyebrow {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    color: #FDD200;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.rainbow-products__eyebrow i {
+    color: #fff;
+}
+
+
+.rainbow-products__heading h2 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: clamp(45px, 5vw, 70px);
+
+    line-height: .95;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    text-transform: uppercase;
+}
+
+
+.rainbow-products__heading h2 span {
+    display: block;
+
+    color: transparent;
+
+    -webkit-text-stroke: 1.5px #FDD200;
+}
+
+
+.rainbow-products__heading > p {
+    max-width: 390px;
+
+    margin: 0;
+
+    color: #C8C4D8;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CATEGORY CARD
+========================================================= */
+
+.rainbow-category-card {
+    position: relative;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    background: #fff;
+
+    border-radius: 25px;
+
+    transition: all .4s ease;
+}
+
+
+.rainbow-category-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 30px 65px rgba(0,0,0,.28);
+}
+
+
+/* =========================================================
+   VISUAL AREA
+========================================================= */
+
+.rainbow-category-card__visual {
+    position: relative;
+
+    height: 370px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* Different backgrounds */
+
+.pouch-card .rainbow-category-card__visual {
+    background:
+        radial-gradient(
+            circle at center,
+            #FFF3A6,
+            #FDD200
+        );
+}
+
+
+.container-card .rainbow-category-card__visual {
+    background:
+        radial-gradient(
+            circle at center,
+            #B9E7FF,
+            #20A4F3
+        );
+}
+
+
+.box-card .rainbow-category-card__visual {
+    background:
+        radial-gradient(
+            circle at center,
+            #FFD0DF,
+            #FF4F9A
+        );
+}
+
+
+/* Product image */
+
+.rainbow-category-card__visual img {
+    position: relative;
+
+    z-index: 4;
+
+    width: 500px;
+    max-height: 500px;
+
+    object-fit: contain;
+
+    transition:
+        transform .5s ease;
+}
+
+
+.rainbow-category-card:hover
+.rainbow-category-card__visual img {
+    transform:
+        scale(1.08)
+        rotate(-3deg);
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.category-number {
+    position: absolute;
+
+    top: 20px;
+    left: 22px;
+
+    z-index: 7;
+
+    color: rgba(41,35,69,.55);
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.category-label {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    z-index: 7;
+
+    padding: 7px 11px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,.45);
+
+    color: #292345;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    backdrop-filter: blur(5px);
+}
+
+
+/* =========================================================
+   COLOUR DOTS
+========================================================= */
+
+.category-colours {
+    position: absolute;
+
+    left: 22px;
+    bottom: 20px;
+
+    z-index: 6;
+
+    display: flex;
+
+    gap: 6px;
+}
+
+
+.category-colours span {
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(255,255,255,.75);
+}
+
+
+.c-red {
+    background: #E53935;
+}
+
+.c-blue {
+    background: #20A4F3;
+}
+
+.c-pink {
+    background: #FF4F9A;
+}
+
+.c-yellow {
+    background: #FDD200;
+}
+
+.c-green {
+    background: #36C96F;
+}
+
+.c-orange {
+    background: #FF7A00;
+}
+
+.c-purple {
+    background: #7654C8;
+}
+
+.c-parrot {
+    background: #7CCB3A;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.rainbow-category-card__content {
+    min-height: 190px;
+
+    padding: 25px 25px 27px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+.category-type {
+    color: #8A8696;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+
+    text-transform: uppercase;
+}
+
+
+.rainbow-category-card__content h3 {
+    margin: 7px 0 8px;
+
+    color: #292345;
+
+    font-size: 23px;
+
+    font-weight: 700;
+}
+
+
+.rainbow-category-card__content p {
+    max-width: 300px;
+
+    margin: 0;
+
+    color: #777285;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+/* Link */
+
+.rainbow-category-card__content a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 20px;
+
+    color: #292345;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    transition: all .3s ease;
+}
+
+
+.rainbow-category-card__content a i {
+    color: #FDD200;
+}
+
+
+.rainbow-category-card__content a:hover {
+    color: #FF4F9A;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.rainbow-products__bottom {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-top: 55px;
+
+    padding-top: 30px;
+
+    border-top:
+        1px solid rgba(255,255,255,.12);
+}
+
+
+.rainbow-products__colours {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.rainbow-products__colours > span {
+    color: #8F8AA2;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+
+.rainbow-products__colours > div {
+    display: flex;
+
+    gap: 7px;
+}
+
+
+.rainbow-products__colours i {
+    display: block;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+}
+
+
+.colour-red {
+    background: #E53935;
+}
+
+.colour-blue {
+    background: #20A4F3;
+}
+
+.colour-purple {
+    background: #7654C8;
+}
+
+.colour-pink {
+    background: #FF4F9A;
+}
+
+.colour-green {
+    background: #36C96F;
+}
+
+.colour-orange {
+    background: #FF7A00;
+}
+
+.colour-yellow {
+    background: #FDD200;
+}
+
+.colour-parrot {
+    background: #7CCB3A;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.rainbow-products__button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px 23px;
+
+    border:
+        1px solid rgba(255,255,255,.20);
+
+    border-radius: 50px;
+
+    color: #fff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    transition: all .3s ease;
+}
+
+
+.rainbow-products__button i {
+    color: #FDD200;
+}
+
+
+.rainbow-products__button:hover {
+    background: #FDD200;
+
+    border-color: #FDD200;
+
+    color: #292345;
+}
+
+
+.rainbow-products__button:hover i {
+    color: #292345;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media only screen and (max-width: 991px) {
+
+    .rainbow-products {
+        padding: 90px 0;
+    }
+
+    .rainbow-products__heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        margin-bottom: 45px;
+    }
+
+    .rainbow-products__heading > p {
+        max-width: 550px;
+    }
+
+    .rainbow-category-card__visual {
+        height: 330px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media only screen and (max-width: 575px) {
+
+    .rainbow-products {
+        padding: 70px 0;
+    }
+
+    .rainbow-products__heading h2 {
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+    .rainbow-products__heading h2 span {
+        -webkit-text-stroke: 1px #FDD200;
+    }
+
+    .rainbow-category-card__visual {
+        height: 310px;
+    }
+
+    .rainbow-category-card__content {
+        min-height: 175px;
+    }
+
+    .rainbow-products__bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .rainbow-products__colours {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+/* =========================================================
+   RAINBOW COLORS
+   WHY RAINBOW SECTION
+========================================================= */
+
+.rainbow-why {
+    position: relative;
+
+    padding: 125px 0 110px;
+
+    background: #F7F5FB;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.rainbow-why__header {
+    max-width: 800px;
+
+    margin-bottom: 60px;
+}
+
+
+.rainbow-why__eyebrow {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    color: #5A4E8C;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.rainbow-why__eyebrow i {
+    color: #FDD200;
+}
+
+
+.rainbow-why__header h2 {
+    margin: 0;
+
+    color: #292345;
+
+    font-size: clamp(48px, 5vw, 72px);
+
+    line-height: .95;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    text-transform: uppercase;
+}
+
+
+.rainbow-why__header h2 span {
+    display: block;
+
+    color: transparent;
+
+    -webkit-text-stroke: 1.5px #292345;
+}
+
+
+.rainbow-why__header > p {
+    max-width: 570px;
+
+    margin: 25px 0 0;
+
+    color: #777285;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.rainbow-why-card {
+    position: relative;
+
+    height: 100%;
+
+    min-height: 290px;
+
+    padding: 28px 25px;
+
+    background: #fff;
+
+    border: 1px solid rgba(41,35,69,.07);
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    transition: all .4s ease;
+}
+
+
+.rainbow-why-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px rgba(41,35,69,.12);
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.rainbow-why-card__top {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+}
+
+
+.why-number {
+    color: #B7B2C4;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.why-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 17px;
+
+    font-size: 21px;
+
+    transition: all .4s ease;
+}
+
+
+.why-yellow {
+    background: rgba(253,210,0,.15);
+
+    color: #D1AA00;
+}
+
+
+.why-pink {
+    background: rgba(255,79,154,.12);
+
+    color: #FF4F9A;
+}
+
+
+.why-blue {
+    background: rgba(32,164,243,.12);
+
+    color: #20A4F3;
+}
+
+
+.why-orange {
+    background: rgba(255,122,0,.12);
+
+    color: #FF7A00;
+}
+
+
+.rainbow-why-card:hover .why-icon {
+    transform: rotate(-8deg) scale(1.08);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.rainbow-why-card h3 {
+    margin: 0 0 12px;
+
+    color: #292345;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+
+.rainbow-why-card p {
+    max-width: 260px;
+
+    margin: 0;
+
+    color: #777285;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   BOTTOM LINE
+========================================================= */
+
+.why-line {
+    position: absolute;
+
+    left: 25px;
+    bottom: 0;
+
+    width: 65px;
+    height: 4px;
+
+    border-radius: 10px;
+}
+
+
+.yellow-line {
+    background: #FDD200;
+}
+
+
+.pink-line {
+    background: #FF4F9A;
+}
+
+
+.blue-line {
+    background: #20A4F3;
+}
+
+
+.orange-line {
+    background: #FF7A00;
+}
+
+
+/* =========================================================
+   STATEMENT
+========================================================= */
+
+.rainbow-why__statement {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 70px;
+
+    padding-top: 30px;
+
+    border-top:
+        1px solid rgba(41,35,69,.10);
+
+    flex-wrap: wrap;
+
+    text-align: center;
+}
+
+
+.rainbow-why__statement span {
+
+    color: #292345;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.rainbow-why__statement strong {
+
+    color: #FF4F9A;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media only screen and (max-width: 991px) {
+
+    .rainbow-why {
+
+        padding: 90px 0;
+    }
+
+    .rainbow-why__header {
+
+        margin-bottom: 45px;
+    }
+
+    .rainbow-why-card {
+
+        min-height: 270px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media only screen and (max-width: 575px) {
+
+    .rainbow-why {
+
+        padding: 70px 0;
+    }
+
+    .rainbow-why__header h2 {
+
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+    .rainbow-why__header h2 span {
+
+        -webkit-text-stroke: 1px #292345;
+    }
+
+    .rainbow-why__statement {
+
+        margin-top: 45px;
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+}
+
+/* =========================================================
+   RAINBOW COLORS
+   OUR JOURNEY
+========================================================= */
+
+.rainbow-journey {
+
+    position: relative;
+
+    padding: 130px 0 115px;
+
+    background: #292345;
+
+    overflow: hidden;
+}
+
+
+/* Background glow */
+
+.rainbow-journey::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 550px;
+    height: 550px;
+
+    left: -280px;
+    top: 20%;
+
+    border-radius: 50%;
+
+    background: #20A4F3;
+
+    opacity: .055;
+
+    filter: blur(100px);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.rainbow-journey__header {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 750px;
+
+    margin-bottom: 75px;
+}
+
+
+.rainbow-journey__eyebrow {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    color: #FDD200;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.rainbow-journey__eyebrow i {
+
+    color: #fff;
+}
+
+
+.rainbow-journey__header h2 {
+
+    margin: 0;
+
+    color: #fff;
+
+    font-size: clamp(48px, 5vw, 72px);
+
+    line-height: .95;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    text-transform: uppercase;
+}
+
+
+.rainbow-journey__header h2 span {
+
+    display: block;
+
+    color: transparent;
+
+    -webkit-text-stroke: 1.5px #FDD200;
+}
+
+
+.rainbow-journey__header p {
+
+    max-width: 600px;
+
+    margin: 25px 0 0;
+
+    color: #C8C4D8;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.rainbow-timeline {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+    z-index: 2;
+}
+
+
+/* Horizontal line */
+
+.rainbow-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 52px;
+
+    left: 7%;
+
+    right: 7%;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #FDD200,
+            #FF4F9A,
+            #20A4F3,
+            #FF7A00
+        );
+
+    opacity: .45;
+}
+
+
+/* =========================================================
+   TIMELINE ITEM
+========================================================= */
+
+.rainbow-timeline__item {
+
+    position: relative;
+
+    min-width: 0;
+
+    z-index: 3;
+}
+
+
+/* Year */
+
+.rainbow-timeline__year {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 105px;
+    height: 105px;
+
+    margin: 0 auto 40px;
+
+    border-radius: 50%;
+
+    background: #211B38;
+
+    border:
+        1px solid rgba(255,255,255,.14);
+
+    color: #fff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    box-shadow:
+        0 0 0 9px #292345;
+
+    transition: all .4s ease;
+}
+
+
+/* Dot */
+
+.rainbow-timeline__dot {
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 12px;
+    height: 12px;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    z-index: 10;
+
+    box-shadow:
+        0 0 0 5px #292345,
+        0 0 15px rgba(255,255,255,.15);
+}
+
+
+.yellow-dot {
+    background: #FDD200;
+}
+
+
+.pink-dot {
+    background: #FF4F9A;
+}
+
+
+.blue-dot {
+    background: #20A4F3;
+}
+
+
+.orange-dot {
+    background: #FF7A00;
+}
+
+
+/* =========================================================
+   TIMELINE CONTENT
+========================================================= */
+
+.rainbow-timeline__content {
+
+    padding: 0 12px;
+
+    text-align: center;
+}
+
+
+.rainbow-timeline__content > span {
+
+    color: #8F8AA2;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+}
+
+
+.rainbow-timeline__content h3 {
+
+    margin: 10px 0 12px;
+
+    color: #fff;
+
+    font-size: 20px;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+
+.rainbow-timeline__content p {
+
+    max-width: 235px;
+
+    margin: auto;
+
+    color: #A9A4B8;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* Hover */
+
+.rainbow-timeline__item:hover
+.rainbow-timeline__year {
+
+    transform: translateY(-7px);
+
+    border-color: #FDD200;
+
+    box-shadow:
+        0 0 0 9px #292345,
+        0 15px 35px rgba(0,0,0,.25);
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.rainbow-journey__quote {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    max-width: 750px;
+
+    margin: 90px auto 0;
+
+    padding-top: 35px;
+
+    border-top:
+        1px solid rgba(255,255,255,.12);
+
+    text-align: center;
+}
+
+
+.quote-mark {
+
+    color: #FDD200;
+
+    font-family: Georgia, serif;
+
+    font-size: 65px;
+
+    line-height: .7;
+}
+
+
+.rainbow-journey__quote p {
+
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    font-weight: 500;
+}
+
+
+.rainbow-journey__quote span {
+
+    display: block;
+
+    margin-top: 8px;
+
+    color: #FF4F9A;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media only screen and (max-width: 991px) {
+
+    .rainbow-journey {
+
+        padding: 90px 0;
+    }
+
+    .rainbow-timeline {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        row-gap: 55px;
+    }
+
+    .rainbow-timeline::before {
+
+        display: none;
+    }
+
+    .rainbow-timeline__year {
+
+        margin-bottom: 25px;
+    }
+
+    .rainbow-timeline__dot {
+
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media only screen and (max-width: 575px) {
+
+    .rainbow-journey {
+
+        padding: 70px 0;
+    }
+
+    .rainbow-journey__header h2 {
+
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+    .rainbow-journey__header h2 span {
+
+        -webkit-text-stroke: 1px #FDD200;
+    }
+
+    .rainbow-timeline {
+
+        display: block;
+
+        padding-left: 25px;
+    }
+
+    .rainbow-timeline::before {
+
+        display: block;
+
+        top: 0;
+        bottom: 0;
+
+        left: 5px;
+
+        right: auto;
+
+        width: 1px;
+        height: auto;
+
+        background:
+            linear-gradient(
+                180deg,
+                #FDD200,
+                #FF4F9A,
+                #20A4F3,
+                #FF7A00
+            );
+    }
+
+    .rainbow-timeline__item {
+
+        padding-bottom: 45px;
+
+        text-align: left;
+    }
+
+    .rainbow-timeline__year {
+
+        width: 75px;
+        height: 75px;
+
+        margin: 0 0 20px;
+
+        font-size: 14px;
+
+        box-shadow:
+            0 0 0 7px #292345;
+    }
+
+    .rainbow-timeline__content {
+
+        padding: 0;
+
+        text-align: left;
+    }
+
+    .rainbow-timeline__content p {
+
+        margin: 0;
+
+    }
+
+    .rainbow-timeline__dot {
+
+        display: block;
+
+        top: 37px;
+
+        left: -20px;
+    }
+
+    .rainbow-journey__quote {
+
+        margin-top: 40px;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .quote-mark {
+
+        font-size: 50px;
+    }
+
+    .rainbow-journey__quote p {
+
+        font-size: 15px;
+    }
+
+}

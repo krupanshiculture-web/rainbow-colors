@@ -4,7 +4,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- #favicon -->
-   <link rel="shortcut icon" href={{ asset('assets/front/images/favicon.png') }} type="image/x-icon" >
+   <link rel="shortcut icon" href={{ asset('assets/front/images/rainbow/favicon-y.png') }} type="image/x-icon" >
    <!-- #title -->
    <title>Rainbow Colors</title>
    <!-- #keywords -->
@@ -26,7 +26,7 @@
    <link rel="stylesheet" href={{ asset('assets/front/vendor/slick/css/slick.css') }}>
    <!-- ==== / css dependencies end ==== -->
    <!-- main css -->
-   <link rel="stylesheet" href={{ asset('assets/front/css/main.css') }}>
+   <link rel="stylesheet" href={{ asset('assets/front/css/front.css') }}>
 </head>
 
 <body>
@@ -39,31 +39,9 @@
       @include('front.layouts.cursor')
 
       <!-- ==== header start ==== -->
-      <header class="header">
-         <div class="primary-navbar secondary--navbar">
-            <div class="container">
-               <div class="row">
-                  <div class="col-12">
-                     <nav class="navbar p-0">
-                        <div class="navbar__logo">
-                           <a href="index.php" aria-label="go to home">
-                              <img src={{ asset('assets/front/images/rainbow/logo.png') }} alt="Image">
-                           </a>
-                        </div>
-                        <div class="navbar__options">
-                           <button class="open-offcanvas-nav d-flex" aria-label="toggle mobile menu"
-                              title="open offcanvas menu"></button>
-                        </div>
-                     </nav>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </header>
+      @include('front.layouts.header')
       <!-- ==== / header end ==== -->
-      <!-- ==== offcanvas nav start ==== -->
-      @include('front.layouts.offcanvas-header')
-      <!-- ==== / offcanvas nav end ==== -->
+
       @yield('content')
 
    </div>

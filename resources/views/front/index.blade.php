@@ -3,938 +3,694 @@
 {{-- @section('title', 'Product Details') --}}
 
 @section('content')
-
-      <div id="smooth-wrapper">
-         <div id="smooth-content">
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
             <!-- ==== main start ==== -->
             <main>
-               <!-- ==== banner start ==== -->
-               <section class="banner">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-12">
-                           <div class="banner__content">
-                              <h1 class="text-uppercase text-start fw-9 mb-0 title-anim">
-                                 WE CREATE
-                                 <span class="text-stroke">Colours</span>
-                                 <span class="interval">
-                                    <i class="icon-arrow-top-right"></i>
-                                 FOR CELEBRATION
-                                 </span>
-                              </h1>
-                              <div class="banner__content-inner">
-                                 <p>We create vibrant, high-quality colors that bring creativity,beauty and life to every product. Discover the world of Rainbow Colors, where every shade tells a story.</p>
-                                 {{-- <div class="cta section__content-cta">
-                                    <div class="single">
-                                       <h5 class="fw-7">
-                                          125+
-                                       </h5>
-                                       <p class="fw-5">Dealers</p>
-                                    </div>
-                                    <div class="single">
-                                       <h5 class="fw-7">
-                                          15+
-                                       </h5>
-                                       <p class="fw-5">Countries</p>
-                                    </div>
-                                 </div> --}}
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  {{-- <img src={{ asset('assets/front/images/rainbow/main-bannner.jpg') }} alt="Image" class="banner-one-thumb d-none d-sm-block g-ban-one"> --}}
-                  <img src={{ asset('assets/front/images/star.png') }} alt="Image" class="star">
-                  <div class="banner-left-text banner-social-text d-none d-md-flex">
-                     <a href="mailto:info@xpovio.com">mail : info.rainbowcolorss@gmail.com</a>
-                     <a href="tel:99-2158-003-6980">Call : +99 777 888 4447</a>
-                  </div>
-                  <div class="banner-right-text banner-social-text d-none d-md-flex">
-                     <a href="https://www.instagram.com/" target="_blank">
-                        instagram
-                     </a>
-                     <a href="https://www.pinterest.com/" target="_blank">
-                        Linkedin
-                     </a>
-                     <a href="https://www.facebook.com/" target="_blank">
-                        facebook
-                     </a>
-                  </div>
-                  {{-- <a class="video-frame video-btn" href="https://www.youtube.com/watch?v=RvreULjnzFo" target="_blank">
-                     <img src={{ asset('assets/front/images/video-frame.png') }} alt="Image">
-                     <i class="fa-sharp fa-solid fa-play"></i>
-                  </a> --}}
-                  <div class="lines d-none d-lg-flex">
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                  </div>
-               </section>
-               <!-- ==== / banner end ==== -->
-               <!-- ==== agency start ==== -->
-               <section class="section agency">
-                  <div class="container">
-                     <div class="row gaper align-items-center">
-                        <div class="col-12 col-lg-6">
-                           <div class="agency__thumb">
-                              <img src={{ asset('assets/front/images/agency/thumb-one.png') }} alt="Image" class="thumb-one fade-left">
-                              <img src={{ asset('assets/front/images/agency/thumb-two.png') }} alt="Image" class="thumb-two fade-right">
-                           </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                           <div class="agency__content section__content">
-                              <span class="sub-title">
-                                 WELCOME
-                                 <i class="fa-solid fa-arrow-right"></i>
-                              </span>
-                              <h2 class="title title-anim">
-                                 We are digital creative
-                                 agency in London
-                              </h2>
-                              <div class="paragraph">
-                                 <p>Bring to the table win-win survival strategies to ensure proactive domination. At
-                                    the end of the day, going forward, a new normal that has evolved from generation on
-                                    the runway heading towards a streamlined cloud solution going forward porttitor
-                                    dictum sapien.</p>
-                              </div>
-                              <div class="skill-wrap">
-                                 <div class="skill-bar-single">
-                                    <div class="skill-bar-title">
-                                       <p class="primary-text">Website design</p>
-                                    </div>
-                                    <div class="skill-bar-wrapper" data-percent="75%">
-                                       <div class="skill-bar">
-                                          <div class="skill-bar-percent">
-                                             <span class="percent-value"></span>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="skill-bar-single">
-                                    <div class="skill-bar-title">
-                                       <p class="primary-text">Digital Marketing</p>
-                                    </div>
-                                    <div class="skill-bar-wrapper" data-percent="90%">
-                                       <div class="skill-bar">
-                                          <div class="skill-bar-percent">
-                                             <span class="percent-value"></span>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="section__content-cta">
-                                 <a href="about-us.php" class="btn btn--primary">Know More</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <img src={{ asset('assets/front/images/star.png') }} alt="Image" class="star">
-                  <img src={{ asset('assets/front/images/agency/dot-large.png') }} alt="Image" class="dot-large">
-               </section>
-               <!-- ==== / agency end ==== -->
-               <!-- ==== portfolio start ==== -->
-               <section class="section portfolio pb-0 fade-wrapper position-relative">
-                  <div class="portfolio__text-slider">
-                     <div class="portfolio__text-slider-single">
-                        <h2 class="h1">
-                           <a href="portfolio.php">
-                              digital portfolio
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="portfolio__text-slider-single">
-                        <h2 class="h1">
-                           <a href="portfolio.php">
-                              digital portfolio
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="portfolio__text-slider-single">
-                        <h2 class="h1">
-                           <a href="portfolio.php">
-                              digital portfolio
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="portfolio__text-slider-single">
-                        <h2 class="h1">
-                           <a href="portfolio.php">
-                              digital portfolio
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="portfolio__text-slider-single">
-                        <h2 class="h1">
-                           <a href="portfolio.php">
-                              digital portfolio
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="portfolio__text-slider-single">
-                        <h2 class="h1">
-                           <a href="portfolio.php">
-                              digital portfolio
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="portfolio__text-slider-single">
-                        <h2 class="h1">
-                           <a href="portfolio.php">
-                              digital portfolio
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                  </div>
-                  <div class="container-fluid">
-                     <div class="row gaper">
-                        <div class="col-12 col-sm-6 col-xl-3">
-                           <div class="portfolio__single portfolio__single-active topy-tilt fade-top">
-                              <a href="portfolio.php">
-                                 <img src={{ asset('assets/front/images/portfolio/one.png') }} alt="Image">
-                              </a>
-                              <div class="portfolio__single-content">
-                                 <a href="portfolio.php">
-                                    <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
-                                 </a>
-                                 <h4>
-                                    <a href="portfolio.php">Digital Marketing</a>
-                                 </h4>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                           <div class="portfolio__single topy-tilt fade-top">
-                              <a href="portfolio.php">
-                                 <img src={{ asset('assets/front/images/portfolio/two.png') }} alt="Image">
-                              </a>
-                              <div class="portfolio__single-content">
-                                 <a href="portfolio.php">
-                                    <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
-                                 </a>
-                                 <h4>
-                                    <a href="portfolio.php">Digital Marketing</a>
-                                 </h4>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                           <div class="portfolio__single topy-tilt fade-top">
-                              <a href="portfolio.php">
-                                 <img src={{ asset('assets/front/images/portfolio/three.png') }} alt="Image">
-                              </a>
-                              <div class="portfolio__single-content">
-                                 <a href="portfolio.php">
-                                    <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
-                                 </a>
-                                 <h4>
-                                    <a href="portfolio.php">Digital Marketing</a>
-                                 </h4>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                           <div class="portfolio__single topy-tilt fade-top">
-                              <a href="portfolio.php">
-                                 <img src={{ asset('assets/front/images/portfolio/four.png') }} alt="Image">
-                              </a>
-                              <div class="portfolio__single-content">
-                                 <a href="portfolio.php">
-                                    <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
-                                 </a>
-                                 <h4>
-                                    <a href="portfolio.php">Digital Marketing</a>
-                                 </h4>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                           <div class="portfolio__single topy-tilt fade-top">
-                              <a href="portfolio.php">
-                                 <img src={{ asset('assets/front/images/portfolio/five.png') }} alt="Image">
-                              </a>
-                              <div class="portfolio__single-content">
-                                 <a href="portfolio.php">
-                                    <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
-                                 </a>
-                                 <h4>
-                                    <a href="portfolio.php">Digital Marketing</a>
-                                 </h4>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                           <div class="portfolio__single topy-tilt fade-top">
-                              <a href="portfolio.php">
-                                 <img src={{ asset('assets/front/images/portfolio/six.png') }} alt="Image">
-                              </a>
-                              <div class="portfolio__single-content">
-                                 <a href="portfolio.php">
-                                    <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
-                                 </a>
-                                 <h4>
-                                    <a href="portfolio.php">Digital Marketing</a>
-                                 </h4>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                           <div class="portfolio__single-alt-wrapper fade-top">
-                              <div class="portfolio__single-alt topy-tilt">
-                                 <h4>
-                                    <a href="portfolio.php">view all work</a>
-                                 </h4>
-                                 <a href="portfolio.php" class="arr">
-                                    <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
-                                 </a>
-                                 <img src={{ asset('assets/front/images/portfolio/dot.png') }} alt="Image" class="dot-one">
-                                 <img src={{ asset('assets/front/images/portfolio/dot.png') }} alt="Image" class="dot-two">
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                           <div class="portfolio__single topy-tilt fade-top">
-                              <a href="portfolio.php">
-                                 <img src={{ asset('assets/front/images/portfolio/seven.png') }} alt="Image">
-                              </a>
-                              <div class="portfolio__single-content">
-                                 <a href="portfolio.php">
-                                    <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
-                                 </a>
-                                 <h4>
-                                    <a href="portfolio.php">Digital Marketing</a>
-                                 </h4>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="lines d-none d-lg-flex">
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                  </div>
-               </section>
-               <!-- ==== / portfolio end ==== -->
-               <!-- ==== offer start ==== -->
-               <section class="section offer fade-wrapper light">
-                  <div class="container">
-                     <div class="row gaper">
-                        <div class="col-12 col-lg-5">
-                           <div class="offer__content section__content">
-                              <span class="sub-title">
-                                 WHAT WE OFFER
-                                 <i class="fa-solid fa-arrow-right"></i>
-                              </span>
-                              <h2 class="title title-anim">
-                                 Giving Your Business Some Great Ideas
-                              </h2>
-                              <div class="paragraph">
-                                 <p>Bring to the table win-win survival strategies to ensure proactive domination. At
-                                    the end of the day, going forward, a new normal that has evolved from generation on
-                                    the runway heading towards a streamlined cloud solution going forward porttitor
-                                    dictum sapien.</p>
-                              </div>
-                              <div class="section__content-cta">
-                                 <a href="our-services.php" class="btn btn--secondary">view all services</a>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-lg-7 col-xl-6 offset-xl-1">
-                           <div class="offer__cta">
-                              <div class="offer__cta-single fade-top">
-                                 <span class="sub-title">
-                                    01
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                 </span>
-                                 <h2>
-                                    <a href="service-single.php">
-                                       uI / uX experience
-                                       <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
+                <!-- ==== hero start ==== -->
+                <section class="rainbow-hero" id="home">
+
+                    <span class="rainbow-hero__dot dot-1"></span>
+                    <span class="rainbow-hero__dot dot-2"></span>
+                    <span class="rainbow-hero__dot dot-3"></span>
+                    <span class="rainbow-hero__dot dot-4"></span>
+                    <span class="rainbow-hero__dot dot-5"></span>
+
+                    <div class="container">
+
+                        <div class="row align-items-center">
+
+                            {{-- Left content --}}
+                            <div class="col-12 col-lg-6">
+
+                                <div class="rainbow-hero__content">
+
+                                    <span class="rainbow-hero__badge">
+                                        <i class="fa-solid fa-sparkles"></i>
+                                        LET'S CREATE COLORFUL MEMORIES
+                                    </span>
+
+                                    <h1>
+                                        WE&nbsp;CREATE &nbsp;
+                                        <span class="text-outline">COLOURS&nbsp;</span>FOR
+                                        EVERY
+                                        <span class="text-fill">CELEBRATION</span>
+                                    </h1>
+
+                                    <p>
+                                        Vibrant, premium-quality Rangoli colours crafted to
+                                        bring creativity, tradition and happiness to every
+                                        celebration &mdash; trusted across India and exported
+                                        worldwide.
+                                    </p>
+
+                                    {{-- Single minimal CTA (text + underline + arrow, no box) --}}
+                                    <a href="#products" class="rainbow-hero__link">
+                                        Explore Products
+                                        <i class="fa-solid fa-arrow-right"></i>
                                     </a>
-                                 </h2>
-                                 <div class="offer-thumb-hover d-none d-md-block"
-                                    data-background={{ asset('assets/front/images/offer/blog-thumb.png') }}></div>
-                              </div>
-                              <div class="offer__cta-single fade-top">
-                                 <span class="sub-title">
-                                    02
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                 </span>
-                                 <h2>
-                                    <a href="service-single.php">
-                                       web development
-                                       <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
-                                    </a>
-                                 </h2>
-                                 <div class="offer-thumb-hover d-none d-md-block"
-                                    data-background={{ asset('assets/front/images/offer/two.png') }}></div>
-                              </div>
-                              <div class="offer__cta-single fade-top">
-                                 <span class="sub-title">
-                                    03
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                 </span>
-                                 <h2>
-                                    <a href="service-single.php">
-                                       digital marketing
-                                       <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
-                                    </a>
-                                 </h2>
-                                 <div class="offer-thumb-hover d-none d-md-block"
-                                    data-background={{ asset('assets/front/images/offer/three.png') }}></div>
-                              </div>
-                              <div class="offer__cta-single fade-top">
-                                 <span class="sub-title">
-                                    04
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                 </span>
-                                 <h2>
-                                    <a href="service-single.php">
-                                       product design
-                                       <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
-                                    </a>
-                                 </h2>
-                                 <div class="offer-thumb-hover d-none d-md-block"
-                                    data-background={{ asset('assets/front/images/offer/blog-thumb.png') }}></div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <img src={{ asset('assets/front/images/offer/star.png') }} alt="Image" class="star">
-                  <div class="lines d-none d-lg-flex">
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                  </div>
-               </section>
-               <!-- ==== / offer end ==== -->
-               <!-- ==== testimonial start ==== -->
-               <section class="section testimonial pt-0 position-relative">
-                  <div class="testimonial__text-slider">
-                     <div class="testimonial__text-slider-single">
-                        <h2 class="h1">
-                           <a href="client-feedback.php">
-                              client's testimonial
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="testimonial__text-slider-single">
-                        <h2 class="h1">
-                           <a href="client-feedback.php">
-                              client's testimonial
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="testimonial__text-slider-single">
-                        <h2 class="h1">
-                           <a href="client-feedback.php">
-                              client's testimonial
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="testimonial__text-slider-single">
-                        <h2 class="h1">
-                           <a href="client-feedback.php">
-                              client's testimonial
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="testimonial__text-slider-single">
-                        <h2 class="h1">
-                           <a href="client-feedback.php">
-                              client's testimonial
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="testimonial__text-slider-single">
-                        <h2 class="h1">
-                           <a href="client-feedback.php">
-                              client's testimonial
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="testimonial__text-slider-single">
-                        <h2 class="h1">
-                           <a href="client-feedback.php">
-                              client's testimonial
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                  </div>
-                  <div class="container position-relative">
-                     <div class="row">
-                        <div class="col-12 col-xxl-10">
-                           <div class="testimonial-s__slider">
-                              <div class="testimonial-s__slider-single">
-                                 <div class="row gaper align-items-center">
-                                    <div class="col-12 col-lg-4 col-xxl-4">
-                                       <div class="thumb">
-                                          <img src={{ asset('assets/front/images/testimonial/s-thumb.png') }} alt="Image">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
-                                             viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
-                                             <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
-                                          </svg>
-                                       </div>
+
+                                    {{-- Trust strip --}}
+                                    <div class="rainbow-hero__trust">
+
+                                        <div class="rainbow-hero__trust-item">
+                                            <strong>2007</strong>
+                                            <span>Established</span>
+                                        </div>
+
+                                        <div class="rainbow-hero__trust-divider"></div>
+
+                                        <div class="rainbow-hero__trust-item">
+                                            <strong>25+</strong>
+                                            <span>Countries Exported</span>
+                                        </div>
+
+                                        <div class="rainbow-hero__trust-divider"></div>
+
+                                        <div class="rainbow-hero__trust-item">
+                                            <strong>100%</strong>
+                                            <span>Premium Quality</span>
+                                        </div>
+
                                     </div>
-                                    <div class="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
-                                       <div class="testimonial-s__content">
-                                          <div class="quote">
-                                             <i class="fa-solid fa-quote-right"></i>
-                                          </div>
-                                          <div class="content">
-                                             <h4>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean
-                                                non odio porttitor, convallis erat sit amet, facilisis velit. Nulla
-                                                ornare convallis malesuada. Phasellus molestie, ipsum ac fringilla.</h4>
-                                          </div>
-                                          <div class="content-cta">
-                                             <h5>Daniel Smith</h5>
-                                             <p>Senior engineer</p>
-                                          </div>
-                                       </div>
+
+                                </div>
+
+                            </div>
+
+
+                            {{-- Right product visual --}}
+                            <div class="col-12 col-lg-6">
+
+                                <div class="rainbow-hero__visual">
+
+                                    <div class="rainbow-hero__ring">
+
+                                        <div class="rainbow-hero__ring-inner"></div>
+
+                                        <div class="rainbow-hero__pedestal"></div>
+
+                                        <div class="rainbow-hero__slider" id="rainbowHeroSlider">
+                                            <img src="{{ asset('assets/front/images/rainbow/container.png') }}"
+                                                alt="Rainbow Heritage Royale Premium Rangoli Colour 2Kg" class="active">
+                                            <img src="{{ asset('assets/front/images/rainbow/2kg-YELLOW.png') }}"
+                                                alt="Rainbow Majesty Pink Rangoli Colour Pouch">
+                                            <img src="{{ asset('assets/front/images/rainbow/pouch.png') }}"
+                                                alt="Rainbow Premium Rangoli Colour Container">
+                                        </div>
+
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="testimonial-s__slider-single">
-                                 <div class="row gaper align-items-center">
-                                    <div class="col-12 col-lg-4 col-xxl-4">
-                                       <div class="thumb">
-                                          <img src={{ asset('assets/front/images/testimonial/s-thumb-two.png') }} alt="Image">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
-                                             viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
-                                             <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
-                                          </svg>
-                                       </div>
+
+                                    {{-- Floating info cards --}}
+                                    <div class="rainbow-hero__float card-quality">
+                                        <i class="fa-solid fa-layer-group"></i>
+                                        <div>
+                                            <strong>5+</strong>
+                                            <span>Product Ranges</span>
+                                        </div>
                                     </div>
-                                    <div class="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
-                                       <div class="testimonial-s__content">
-                                          <div class="quote">
-                                             <i class="fa-solid fa-quote-right"></i>
-                                          </div>
-                                          <div class="content">
-                                             <h4>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean
-                                                non odio porttitor, convallis erat sit amet, facilisis velit. Nulla
-                                                ornare convallis malesuada. Phasellus molestie, ipsum ac fringilla.</h4>
-                                          </div>
-                                          <div class="content-cta">
-                                             <h5>Daniel Smith</h5>
-                                             <p>Senior engineer</p>
-                                          </div>
-                                       </div>
+
+                                    <div class="rainbow-hero__float card-shades">
+                                        <i class="fa-solid fa-boxes-stacked"></i>
+                                        <div>
+                                            <strong>11+</strong>
+                                            <span>Pack Sizes</span>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="testimonial-s__slider-single">
-                                 <div class="row gaper align-items-center">
-                                    <div class="col-12 col-lg-4 col-xxl-4">
-                                       <div class="thumb">
-                                          <img src={{ asset('assets/front/images/testimonial/s-thumb-three.png') }} alt="Image">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
-                                             viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
-                                             <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
-                                          </svg>
-                                       </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    {{-- Scroll indicator --}}
+                    {{-- <a href="#about" class="rainbow-hero__scroll">
+                        <span>SCROLL</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a> --}}
+
+                </section>
+                <!-- ==== / hero end ==== -->
+                <!-- ==== about rainbow start ==== -->
+                <section class="rainbow-about" id="about">
+
+                    <div class="container">
+
+                        <div class="row align-items-start gaper">
+
+                            {{-- LEFT: Image collage + stats bar --}}
+                            <div class="col-12 col-lg-6">
+
+                                <div class="rainbow-about__media">
+
+                                    <div class="rainbow-about__collage">
+
+                                        <div class="rainbow-about__photo photo-main">
+                                            <img src="{{ asset('assets/front/images/rainbow/about-main.jpg') }}"
+                                                alt="Rainbow Colors - Premium Rangoli Colour Manufacturing">
+                                        </div>
+
+                                        <div class="rainbow-about__photo photo-accent">
+                                            <img src="{{ asset('assets/front/images/rainbow/about-accent.jpg') }}"
+                                                alt="Rainbow Colors - Colour Craftsmanship">
+                                        </div>
+
+                                        {{-- <div class="rainbow-about__glow"></div> --}}
+
                                     </div>
-                                    <div class="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
-                                       <div class="testimonial-s__content">
-                                          <div class="quote">
-                                             <i class="fa-solid fa-quote-right"></i>
-                                          </div>
-                                          <div class="content">
-                                             <h4>posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean
-                                                non odio porttitor, convallis erat sit amet, facilisis velit. Nulla
-                                                ornare convallis malesuada. Phasellus molestie, ipsum ac fringilla.</h4>
-                                          </div>
-                                          <div class="content-cta">
-                                             <h5>Daniel Smith</h5>
-                                             <p>Senior engineer</p>
-                                          </div>
-                                       </div>
+
+                                    {{-- Signature quote strip (replaces numeric stats) --}}
+                                    <div class="rainbow-about__quote">
+
+                                        <i class="fa-solid fa-quote-left"></i>
+
+                                        <p>
+                                            Every shade we create carries a piece of tradition,
+                                            made for the moments that matter most.
+                                        </p>
+
+                                        <span>&mdash; Rainbow Colors</span>
+
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
+
+                                </div>
+
+                            </div>
+
+
+                            {{-- RIGHT: Content --}}
+                            <div class="col-12 col-lg-6">
+
+                                <div class="rainbow-about__content">
+                                    <span class="rainbow-about__glow"></span>
+
+                                    <span class="rainbow-section-label">
+                                        <i class="fa-solid fa-sparkles"></i>
+                                        ABOUT RAINBOW COLORS
+                                    </span>
+
+                                    <h2>
+                                        Every Shade Tells <br>
+                                        <em>A Story</em>
+                                    </h2>
+
+                                    <p class="rainbow-about__lead">
+                                        We don&rsquo;t just sell colour &mdash;
+                                        <strong>we celebrate it.</strong>
+                                    </p>
+
+                                    <p>
+                                        Rainbow Colors brings together the beauty of Indian
+                                        tradition and the vibrance of modern celebrations
+                                        through premium, export-grade Rangoli colours &mdash;
+                                        trusted across India and exported worldwide.
+                                    </p>
+
+                                    {{-- Vertical feature list, not cards --}}
+                                    <ul class="rainbow-about__list">
+
+                                        <li>
+                                            <span class="list-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                            <div>
+                                                <h5>Safe &amp; Non-Toxic</h5>
+                                                <p>Skin-friendly formulations for every celebration.</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <span class="list-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                            <div>
+                                                <h5>Fragrant Colour Variants</h5>
+                                                <p>Scented shades that add a fresh, sensory touch to celebrations.</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <span class="list-icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                            <div>
+                                                <h5>Made With Care</h5>
+                                                <p>Created for joyful, worry-free celebrations.</p>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="rainbow__button">
+                                        <a href="#products" class="rainbow-btn">
+                                            Discover Our Colours
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
-                     </div>
-                     <div class="slide-group justify-content-start">
-                        <a href="javascript:void(0)" aria-label="previous item" class="slide-btn prev-testimonial-three">
-                           <i class="fa-light fa-angle-left"></i>
-                        </a>
-                        <a href="javascript:void(0)" aria-label="next item" class="slide-btn next-testimonial-three">
-                           <i class="fa-light fa-angle-right"></i>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="other-section">
-                     <img class="other-section-image" src={{ asset('assets/front/images/testimonial/s-thumb.png') }}
-                        alt="Next Slide Image">
-                  </div>
-                  <div class="lines d-none d-lg-flex">
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                  </div>
-               </section>
-               <!-- ==== / testimonial end ==== -->
-               <!-- ==== blog start ==== -->
-               <section class="section blog fade-wrapper">
-                  <div class="container">
-                     <div class="row justify-content-center">
-                        <div class="col-12 col-lg-8">
-                           <div class="section__header text-center">
-                              <span class="sub-title">
-                                 news & Blog
-                                 <i class="fa-solid fa-arrow-right"></i>
-                              </span>
-                              <h2 class="title title-anim">what's new in blog</h2>
-                           </div>
+
+                    </div>
+
+                </section>
+                <!-- ==== / about rainbow end ==== -->
+                <!-- ==== products start ==== -->
+                <section class="rainbow-products" id="products">
+
+                    <div class="container">
+
+                        {{-- Heading --}}
+                        <div class="rainbow-products__heading">
+
+                            <div>
+                                <span class="rainbow-products__eyebrow">
+                                    <i class="fa-solid fa-sparkles"></i>
+                                    OUR PRODUCTS
+                                </span>
+
+                                <h2>
+                                    COLOUR FOR
+                                    <span>EVERY FORMAT</span>
+                                </h2>
+                            </div>
+
+                            <p>
+                                From everyday pouches to premium export containers,
+                                explore our full range crafted for every celebration
+                                and every scale of business.
+                            </p>
+
                         </div>
-                     </div>
-                     <div class="row gaper">
-                        <div class="col-12 col-md-6">
-                           <div class="blog__single fade-top">
-                              <div class="blog__single-thumb topy-tilt">
-                                 <a href="blog-single.php">
-                                    <img src={{ asset('assets/front/images/blog/one.png') }} alt="Image">
-                                 </a>
-                              </div>
-                              <div class="blog__single-content">
-                                 <h4>
-                                    <a href="blog-single.php">A Simple Social Media Marketing Checklist</a>
-                                 </h4>
-                                 <div class="blog__single-meta">
-                                    <a href="blog.php" class="sub-title">
-                                       creative
-                                       <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-                                    <p>MARCH 23, 2023</p>
-                                 </div>
-                              </div>
-                           </div>
+
+
+                        {{-- Category cards --}}
+                        <div class="row gaper">
+
+                            {{-- Pouch --}}
+                            <div class="col-12 col-md-6 col-xl-4">
+
+                                <a href="#" class="rainbow-category-card pouch-card">
+
+                                    <div class="rainbow-category-card__visual">
+
+                                        <span class="category-number">01</span>
+                                        <span class="category-label">Pouch</span>
+
+                                        <img src="{{ asset('assets/front/images/rainbow/container.png') }}"
+                                            alt="Rainbow Colors Rangoli Colour Pouch - 100g 250g 500g">
+
+                                    </div>
+
+                                    <div class="rainbow-category-card__content">
+
+                                        <div>
+                                            <span class="category-type">3 Sizes</span>
+                                            <h3>Pouch Range</h3>
+                                            <p>Everyday-use pouches available in 100g, 250g and 500g.</p>
+                                        </div>
+
+                                        <span class="card-link">
+                                            Explore
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </span>
+
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+
+                            {{-- Container --}}
+                            <div class="col-12 col-md-6 col-xl-4">
+
+                                <a href="#" class="rainbow-category-card container-card">
+
+                                    <div class="rainbow-category-card__visual">
+
+                                        <span class="category-number">02</span>
+                                        <span class="category-label">Container</span>
+
+                                        <img src="{{ asset('assets/front/images/rainbow/container.png') }}"
+                                            alt="Rainbow Colors Rangoli Colour Container - 250g to 2kg">
+
+                                    </div>
+
+                                    <div class="rainbow-category-card__content">
+
+                                        <div>
+                                            <span class="category-type">4 Sizes</span>
+                                            <h3>Container Range</h3>
+                                            <p>Premium containers from 250g up to our signature 2kg pack.</p>
+                                        </div>
+
+                                        <span class="card-link">
+                                            Explore
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </span>
+
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+
+                            {{-- Box --}}
+                            <div class="col-12 col-md-6 col-xl-4">
+
+                                <a href="#" class="rainbow-category-card box-card">
+
+                                    <div class="rainbow-category-card__visual">
+
+                                        <span class="category-number">03</span>
+                                        <span class="category-label">Box</span>
+
+                                        <img src="{{ asset('assets/front/images/rainbow/box.png') }}"
+                                            alt="Rainbow Colors Sparsh and Signature Rangoli Colour Box">
+
+                                    </div>
+
+                                    <div class="rainbow-category-card__content">
+
+                                        <div>
+                                            <span class="category-type">3 Variants</span>
+                                            <h3>Box Range</h3>
+                                            <p>Sparsh 250g and Signature 500g &mdash; gift-ready presentation.</p>
+                                        </div>
+
+                                        <span class="card-link">
+                                            Explore
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </span>
+
+                                    </div>
+
+                                </a>
+
+                            </div>
+
                         </div>
-                        <div class="col-12 col-md-6">
-                           <div class="blog__single fade-top">
-                              <div class="blog__single-thumb topy-tilt">
-                                 <a href="blog-single.php">
-                                    <img src={{ asset('assets/front/images/blog/two.png') }} alt="Image">
-                                 </a>
-                              </div>
-                              <div class="blog__single-content">
-                                 <h4>
-                                    <a href="blog-single.php">Transforming Challenges into Opportunities</a>
-                                 </h4>
-                                 <div class="blog__single-meta">
-                                    <a href="blog.php" class="sub-title">
-                                       creative
-                                       <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-                                    <p>MARCH 23, 2023</p>
-                                 </div>
-                              </div>
-                           </div>
+
+
+                        {{-- Bottom bar --}}
+                        <div class="rainbow-products__bottom">
+
+                            <div class="rainbow-products__colours">
+                                <span>50+ SHADES ACROSS ALL RANGES</span>
+                                <div>
+                                    <i class="colour-red"></i>
+                                    <i class="colour-blue"></i>
+                                    <i class="colour-purple"></i>
+                                    <i class="colour-pink"></i>
+                                    <i class="colour-green"></i>
+                                    <i class="colour-orange"></i>
+                                    <i class="colour-yellow"></i>
+                                    <i class="colour-parrot"></i>
+                                </div>
+                            </div>
+
+                            <a href="#" class="rainbow-products__button">
+                                View Full Catalogue
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
                         </div>
-                     </div>
-                  </div>
-               </section>
-               <!-- ==== / blog end ==== -->
-               <!-- ==== sponsor start ==== -->
-               <div class="sponsor section pb-0">
-                  <div class="container-fluid">
-                     <div class="row justify-content-center">
-                        <div class="col-12">
-                           <div class="sponsor__slider ">
-                              <div class="sponsor__slider-item">
-                                 <img src={{ asset('assets/front/images/sponsor/one.png') }} alt="Image">
-                              </div>
-                              <div class="sponsor__slider-item">
-                                 <img src={{ asset('assets/front/images/sponsor/two.png') }} alt="Image">
-                              </div>
-                              <div class="sponsor__slider-item">
-                                 <img src={{ asset('assets/front/images/sponsor/three.png') }} alt="Image">
-                              </div>
-                              <div class="sponsor__slider-item">
-                                 <img src={{ asset('assets/front/images/sponsor/four.png') }} alt="Image">
-                              </div>
-                              <div class="sponsor__slider-item">
-                                 <img src={{ asset('assets/front/images/sponsor/five.png') }} alt="Image">
-                              </div>
-                              <div class="sponsor__slider-item">
-                                 <img src={{ asset('assets/front/images/sponsor/six.png') }} alt="Image">
-                              </div>
-                              <div class="sponsor__slider-item">
-                                 <img src={{ asset('assets/front/images/sponsor/one.png') }} alt="Image">
-                              </div>
-                              <div class="sponsor__slider-item">
-                                 <img src={{ asset('assets/front/images/sponsor/two.png') }} alt="Image">
-                              </div>
-                              <div class="sponsor__slider-item">
-                                 <img src={{ asset('assets/front/images/sponsor/three.png') }} alt="Image">
-                              </div>
-                              <div class="sponsor__slider-item">
-                                 <img src={{ asset('assets/front/images/sponsor/four.png') }} alt="Image">
-                              </div>
-                              <div class="sponsor__slider-item">
-                                 <img src={{ asset('assets/front/images/sponsor/five.png') }} alt="Image">
-                              </div>
-                              <div class="sponsor__slider-item">
-                                 <img src={{ asset('assets/front/images/sponsor/six.png') }} alt="Image">
-                              </div>
-                           </div>
+
+                    </div>
+
+                </section>
+                <!-- ==== / products end ==== -->
+                <!-- ==== why rainbow start ==== -->
+                <section class="rainbow-why" id="why-rainbow">
+
+                    <div class="container">
+
+                        {{-- Header --}}
+                        <div class="rainbow-why__header">
+
+                            <span class="rainbow-section-label">
+                                <i class="fa-solid fa-sparkles"></i>
+                                WHY RAINBOW COLORS
+                            </span>
+
+                            <h2>
+                                MORE THAN
+                                <span>JUST COLOUR</span>
+                            </h2>
+
+                            <p>
+                                We bring together vibrant colours, thoughtful formulations
+                                and export-grade quality to make every celebration
+                                &mdash; and every business partnership &mdash; special.
+                            </p>
+
                         </div>
-                     </div>
-                  </div>
-                  <div class="lines d-none d-lg-flex">
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                  </div>
-               </div>
-               <!-- ==== / sponsor end ==== -->
-               <!-- ==== next page start ==== -->
-               <section class="section next-page">
-                  <div class="container">
-                     <div class="row justify-content-center">
-                        <div class="col-12 col-lg-8">
-                           <div class="section__header text-center">
-                              <a href="about-us.php" class="sub-title mb-0">
-                                 Next Page
-                                 <i class="fa-solid fa-arrow-right"></i>
-                              </a>
-                           </div>
+
+
+                        {{-- Feature cards --}}
+                        <div class="row gaper">
+
+                            {{-- 01 --}}
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <div class="rainbow-why-card">
+                                    <div class="rainbow-why-card__top">
+                                        <span class="why-number">01</span>
+                                        <div class="why-icon why-yellow">
+                                            <i class="fa-solid fa-award"></i>
+                                        </div>
+                                    </div>
+                                    <h3>17+ Years of Trust</h3>
+                                    <p>Nearly two decades of proven quality, trusted by industry leaders since inception.
+                                    </p>
+                                    <span class="why-line yellow-line"></span>
+                                </div>
+
+                            </div>
+
+                            {{-- 02 --}}
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <div class="rainbow-why-card">
+                                    <div class="rainbow-why-card__top">
+                                        <span class="why-number">02</span>
+                                        <div class="why-icon why-pink">
+                                            <i class="fa-solid fa-wind"></i>
+                                        </div>
+                                    </div>
+                                    <h3>Rich Fragrance</h3>
+                                    <p>Scented colour variants that add a fresh, sensory touch to every celebration.</p>
+                                    <span class="why-line pink-line"></span>
+                                </div>
+                            </div>
+
+                            {{-- 03 --}}
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <div class="rainbow-why-card">
+                                    <div class="rainbow-why-card__top">
+                                        <span class="why-number">03</span>
+                                        <div class="why-icon why-blue">
+                                            <i class="fa-solid fa-globe"></i>
+                                        </div>
+                                    </div>
+                                    <h3>Export Quality</h3>
+                                    <p>International quality standards, trusted by partners across borders.</p>
+                                    <span class="why-line blue-line"></span>
+                                </div>
+                            </div>
+
+                            {{-- 04 --}}
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <div class="rainbow-why-card">
+                                    <div class="rainbow-why-card__top">
+                                        <span class="why-number">04</span>
+                                        <div class="why-icon why-orange">
+                                            <i class="fa-solid fa-gem"></i>
+                                        </div>
+                                    </div>
+                                    <h3>Premium Colours</h3>
+                                    <p>Vivid, long-lasting shades crafted with premium-grade ingredients.</p>
+                                    <span class="why-line orange-line"></span>
+                                </div>
+                            </div>
+
+
                         </div>
-                     </div>
-                  </div>
-                  <div class="next__text-slider">
-                     <div class="next__text-slider-single">
-                        <h2 class="h1">
-                           <a href="about-us.php">
-                              About Us
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="next__text-slider-single">
-                        <h2 class="h1">
-                           <a href="about-us.php">
-                              About Us
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="next__text-slider-single">
-                        <h2 class="h1">
-                           <a href="about-us.php">
-                              About Us
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="next__text-slider-single">
-                        <h2 class="h1">
-                           <a href="about-us.php">
-                              About Us
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="next__text-slider-single">
-                        <h2 class="h1">
-                           <a href="about-us.php">
-                              About Us
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="next__text-slider-single">
-                        <h2 class="h1">
-                           <a href="about-us.php">
-                              About Us
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                     <div class="next__text-slider-single">
-                        <h2 class="h1">
-                           <a href="about-us.php">
-                              About Us
-                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
-                           </a>
-                        </h2>
-                     </div>
-                  </div>
-                  <div class="lines d-none d-lg-flex">
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                  </div>
-               </section>
-               <!-- ==== / next page end ==== -->
+
+
+                        {{-- Bottom Statement --}}
+                        <div class="rainbow-why__statement">
+                            <span>COLOUR IS OUR LANGUAGE.</span>
+                            <strong>CELEBRATION IS OUR PURPOSE.</strong>
+                        </div>
+
+                    </div>
+
+                </section>
+                <!-- ==== / why rainbow end ==== -->
+                <!-- ==== journey start ==== -->
+                <section class="rainbow-story" id="journey">
+
+                    <div class="container">
+
+                        <div class="rainbow-story__header">
+
+                            <div class="rainbow-story__header-left">
+                                <span class="rainbow-story__eyebrow">
+                                    <i class="fa-solid fa-sparkles"></i>
+                                    OUR JOURNEY
+                                </span>
+
+                                <h2>
+                                    17+ YEARS OF
+                                    <span>COLOUR &amp; CRAFT</span>
+                                </h2>
+                            </div>
+
+                            <p>
+                                From a small dolomite unit in Chhota Udepur to a premium
+                                colour brand trusted across India and beyond.
+                            </p>
+
+                        </div>
+
+
+                        {{-- Year tabs --}}
+                        <div class="story-tabs" id="storyTabs">
+
+                            <button class="story-tab active" data-target="tab-2007">
+                                <span class="tab-year">2007</span>
+                                <span class="tab-label">The Foundation</span>
+                            </button>
+
+                            <button class="story-tab" data-target="tab-2019">
+                                <span class="tab-year">2019</span>
+                                <span class="tab-label">Birth of Rainbow</span>
+                            </button>
+
+                            <button class="story-tab" data-target="tab-2026">
+                                <span class="tab-year">2026</span>
+                                <span class="tab-label">What's Next</span>
+                            </button>
+
+                            <span class="story-tabs__slider" id="storyTabsSlider"></span>
+
+                        </div>
+
+
+                        {{-- Panels --}}
+                        <div class="story-panels" id="storyPanels">
+
+                            {{-- 2007 --}}
+                            <div class="story-panel active" id="tab-2007">
+                                <div class="story-panel__image">
+                                    <img src="{{ asset('images/journey/journey-2007.jpg') }}"
+                                        alt="Varun Minerals founded 2007">
+                                </div>
+                                <div class="story-panel__content">
+                                    <span class="panel-tag">ROOTED IN TRUST</span>
+                                    <h3>Where It All Began</h3>
+                                    <p>
+                                        Founded in Chhota Udepur, Gujarat &mdash; supplying premium
+                                        materials to India's leading paint brands, and laying the
+                                        foundation for what would become Rainbow.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {{-- 2019 --}}
+                            <div class="story-panel" id="tab-2019">
+
+                                <div class="story-panel__image">
+                                    <img src="{{ asset('images/journey/journey-2019.jpg') }}"
+                                        alt="Rainbow brand launched 2019">
+                                </div>
+
+                                <div class="story-panel__content">
+                                    <span class="panel-tag">BIRTH OF RAINBOW</span>
+                                    <h3>A Journey from Tradition to Colour</h3>
+                                    <p>
+                                        In 2018, experiments with Colour Rangoli and Holi
+                                        Gulal began, launching the vibrant Rainbow brand
+                                        in 2019. What started in a 300 sq. ft. rented
+                                        space grew rapidly &mdash; thanks to a relentless
+                                        focus on premium quality, skin-safe ingredients,
+                                        and eco-friendly production.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            {{-- 2021 --}}
+                            <div class="story-panel" id="tab-2021">
+
+                                <div class="story-panel__image">
+                                    <img src="{{ asset('images/journey/journey-2021.jpg') }}"
+                                        alt="Rainbow scaling production 2021">
+                                </div>
+
+                                <div class="story-panel__content">
+                                    <span class="panel-tag">SCALING NEW HEIGHTS</span>
+                                    <h3>Growth Across India &amp; Beyond</h3>
+                                    <p>
+                                        By 2020, Rainbow had crossed 3,000 tons in annual
+                                        colour sales &mdash; growing to 5,000 tons by 2021.
+                                        Today, operating from a fully owned, automated
+                                        facility with in-house quality control labs,
+                                        Rainbow delivers over 10,000 tons of Rangoli
+                                        colours and 5,000 tons of Holi Gulal each year.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            {{-- 2026 --}}
+                            <div class="story-panel" id="tab-2026">
+
+                                <div class="story-panel__image">
+                                    <img src="{{ asset('images/journey/journey-2026.jpg') }}"
+                                        alt="Unit-2 premium packaging facility Vadodara 2026">
+                                </div>
+
+                                <div class="story-panel__content">
+                                    <span class="panel-tag">WHAT'S NEXT</span>
+                                    <h3>Introducing Unit&ndash;2</h3>
+                                    <p>
+                                        Launching in Vadodara as a dedicated premium
+                                        packaging unit &mdash; founded by Manav Patel in
+                                        collaboration with Harshit Upadhyay, focused on
+                                        retail and smaller-size packaging with a more
+                                        premium, professional customer experience.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="rainbow-story__cta">
+                            <a href="{{ url('/about') }}#journey" class="story-cta-btn">
+                                Read Our Full Story
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </section>
+                <!-- ==== / journey end ==== -->
             </main>
             <!-- ==== / main end ==== -->
             <!-- ==== footer start ==== -->
-            <footer class="footer section pb-0" data-background={{ asset('assets/front/images/footer/footer-bg.png') }}>
-               <div class="container">
-                  <div class="row gaper">
-                     <div class="col-12 col-lg-5 col-xl-6">
-                        <div class="footer__single">
-                           <a href="index.php" class="logo">
-                              <img src={{ asset('assets/front/images/logo.png') }} alt="Image">
-                           </a>
-                           <div class="footer__single-meta">
-                              <a href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
-                                 target="_blank">
-                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
-                                 901 N Pitt Str., Suite 170
-                                 Alexandria, USA
-                              </a>
-                              <a href="tel:406-555-0120">
-                                 <i class="fa-sharp fa-solid fa-phone-volume"></i>
-                                 (406) 555-0120
-                              </a>
-                              <a href="mailto:info@xpovio.com">
-                                 <i class="fa-sharp fa-solid fa-envelope"></i>
-                                 info@xpovio.com
-                              </a>
-                           </div>
-                           <div class="footer__cta text-start">
-                              <a href="contact-us.php" class="btn btn--secondary">book a call now</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-12 col-lg-2 col-xl-2">
-                        <div class="footer__single">
-                           <div class="footer__single-intro">
-                              <h5>discover</h5>
-                           </div>
-                           <div class="footer__single-content">
-                              <ul>
-                                 <li>
-                                    <a href="about-us.php">About Us</a>
-                                 </li>
-                                 <li>
-                                    <a href="client-feedback.php">Award Winning</a>
-                                 </li>
-                                 <li>
-                                    <a href="blog.php">News & Blog</a>
-                                 </li>
-                                 <li>
-                                    <a href="contact-us.php">careers</a>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-12 col-lg-5 col-xl-4">
-                        <div class="footer__single">
-                           <div class="footer__single-intro">
-                              <h5>Subscribe our newsletter</h5>
-                           </div>
-                           <div class="footer__single-content">
-                              <p>Welcome to our digital agency We specialize in helping business most like yours succeed
-                                 online.</p>
-                              <div class="footer__single-form">
-                                 <form action="#" method="post">
-                                    <div class="input-email">
-                                       <input type="email" name="subscribe-news" id="subscribeNews"
-                                          placeholder="Enter Your Email" required>
-                                       <button type="submit" class="subscribe">
-                                          <i class="fa-sharp fa-solid fa-paper-plane"></i>
-                                       </button>
-                                    </div>
-                                 </form>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-12">
-                        <div class="footer__copyright">
-                           <div class="row align-items-center gaper">
-                              <div class="col-12 col-lg-8">
-                                 <div class="footer__copyright-text text-center text-lg-start">
-                                    <p>
-                                       Copyright &copy;
-                                       <span id="copyYear"></span>
-                                       Xpovio by
-                                       <a href="https://themeforest.net/user/pixel-plus/"
-                                          target="_blank">pixel-plus</a>
-                                       . All Rights Reserved
-                                    </p>
-                                 </div>
-                              </div>
-                              <div class="col-12 col-lg-4">
-                                 <div class="social justify-content-center justify-content-lg-end">
-                                    <a href="https://www.facebook.com/" target="_blank">
-                                       <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                    <a href="https://www.twitter.com/" target="_blank">
-                                       <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                    <a href="https://www.pinterest.com/" target="_blank">
-                                       <i class="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com/" target="_blank">
-                                       <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </footer>
+            @include('front.layouts.footer')
             <!-- ==== / footer end ==== -->
-         </div>
-      </div>
-      <div class="line">
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-      </div>
-      <!-- video modal -->
-      <div class="vid-m">
-         <div class="vid-c">
-            <a href="javascript:void(0)" aria-label="close video popup" class="close-v">
-               <i class="fa-light fa-xmark-large"></i>
-            </a>
-            <video autoplay="autoplay" loop muted controls>
-               <source src={{ asset('assets/front/images/popup-video.mp4') }} type="video/mp4">
-            </video>
-            <h5>Hello</h5>
-         </div>
-      </div>
-   </div>
-
+        </div>
+    </div>
+    </div>
 @endsection
