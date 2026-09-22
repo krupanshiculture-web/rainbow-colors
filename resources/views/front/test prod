@@ -1,0 +1,817 @@
+@extends('front.layouts.head')
+
+@section('content')
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!--  PAGE HERO START -->
+            <section class="rainbow-page-hero">
+
+                {{-- Creative Colour Elements --}}
+                <div class="rainbow-page-hero__colour colour-one"></div>
+                <div class="rainbow-page-hero__colour colour-two"></div>
+                <div class="rainbow-page-hero__colour colour-three"></div>
+
+                <div class="rainbow-page-hero__rings">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="rainbow-page-hero__dots">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+                <div class="container">
+
+                    <div class="rainbow-page-hero__inner">
+
+                        <div class="rainbow-page-hero__breadcrumb">
+                            <a href="{{ url('/') }}">Home</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <span>Products</span>
+                        </div>
+
+                        <div class="rainbow-page-hero__heading-wrap">
+
+                            <h1>
+                                The People &amp; Purpose
+                                <span>Behind Rainbow</span>
+                            </h1>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- PAGE HERO END -->
+
+            <!-- ==== page hero start ==== -->
+<section class="rainbow-page-hero">
+
+    <div class="container">
+
+        <div class="rainbow-page-hero__inner">
+
+            <div class="rainbow-page-hero__breadcrumb">
+                <a href="{{ url('/') }}">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="{{ url('/products') }}">Products</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Pouch Range</span>
+            </div>
+
+            <h1>
+                Pouch <span>Range</span>
+            </h1>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==== / page hero end ==== -->
+
+
+<!-- ==== featured product start ==== -->
+<section class="rainbow-featured-product">
+
+    <div class="container">
+
+        <div class="featured-product__inner">
+
+            {{-- Left: Image --}}
+            <div class="featured-product__visual">
+
+                <div class="featured-product__ring">
+                    <img src="{{ asset('assets/front/images/rainbow/pouch-red.png') }}" alt="Rainbow Colors Pouch" id="featuredProductImage">
+                </div>
+
+                <span class="featured-product__badge">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    Export Quality
+                </span>
+
+            </div>
+
+
+            {{-- Right: Details --}}
+            <div class="featured-product__info">
+
+                <span class="rainbow-section-label">
+                    <i class="fa-solid fa-sparkles"></i>
+                    POUCH RANGE
+                </span>
+
+                <h2>Vibrant Colours, Everyday Pouch.</h2>
+
+                <p>
+                    Our Pouch Range is designed for everyday celebrations
+                    &mdash; lightweight, easy to carry, and available in
+                    vibrant shades crafted with safe, skin-friendly
+                    ingredients. Perfect for Rangoli, Holi, and every
+                    festive occasion in between.
+                </p>
+
+                {{-- Available sizes --}}
+                <div class="featured-product__sizes">
+                    <span class="featured-product__label">Available Sizes</span>
+                    <div class="size-chips">
+                        <span class="size-chip active">100g</span>
+                        <span class="size-chip">250g</span>
+                        <span class="size-chip">500g</span>
+                    </div>
+                </div>
+
+                {{-- Colour swatches --}}
+                <div class="featured-product__colours">
+                    <span class="featured-product__label">Select a Colour</span>
+
+                    <div class="colour-swatches" id="colourSwatches">
+
+                        <button class="swatch active" style="background:#E53935" data-image="{{ asset('assets/front/images/rainbow/pouch-red.png') }}" data-name="Red" aria-label="Red"></button>
+                        <button class="swatch" style="background:#20A4F3" data-image="{{ asset('assets/front/images/rainbow/pouch-skyblue.png') }}" data-name="Sky Blue" aria-label="Sky Blue"></button>
+                        <button class="swatch" style="background:#1565C0" data-image="{{ asset('assets/front/images/rainbow/pouch-blue.png') }}" data-name="Blue" aria-label="Blue"></button>
+                        <button class="swatch" style="background:#7654C8" data-image="{{ asset('assets/front/images/rainbow/pouch-purple.png') }}" data-name="Purple" aria-label="Purple"></button>
+                        <button class="swatch" style="background:#FF4F9A" data-image="{{ asset('assets/front/images/rainbow/pouch-pink.png') }}" data-name="Pink" aria-label="Pink"></button>
+                        <button class="swatch" style="background:#E91E8C" data-image="{{ asset('assets/front/images/rainbow/pouch-ranipink.png') }}" data-name="Rani Pink" aria-label="Rani Pink"></button>
+                        <button class="swatch" style="background:#36C96F" data-image="{{ asset('assets/front/images/rainbow/pouch-green.png') }}" data-name="Green" aria-label="Green"></button>
+                        <button class="swatch" style="background:#FF7A00" data-image="{{ asset('assets/front/images/rainbow/pouch-orange.png') }}" data-name="Orange" aria-label="Orange"></button>
+                        <button class="swatch" style="background:#F06292" data-image="{{ asset('assets/front/images/rainbow/pouch-rosepink.png') }}" data-name="Rose Pink" aria-label="Rose Pink"></button>
+                        <button class="swatch" style="background:#FDD200" data-image="{{ asset('assets/front/images/rainbow/pouch-yellow.png') }}" data-name="Yellow" aria-label="Yellow"></button>
+                        <button class="swatch" style="background:#7CCB3A" data-image="{{ asset('assets/front/images/rainbow/pouch-parrot.png') }}" data-name="Parrot" aria-label="Parrot"></button>
+                        <button class="swatch swatch--white" style="background:#FFFFFF" data-image="{{ asset('assets/front/images/rainbow/pouch-white.png') }}" data-name="White" aria-label="White"></button>
+
+                    </div>
+
+                    <span class="selected-colour-name" id="selectedColourName">Red</span>
+                </div>
+
+                <a href="#get-in-touch" class="rainbow-btn">
+                    Enquire About This Range
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==== / featured product end ==== -->
+
+
+<!-- ==== auto slider start ==== -->
+<section class="rainbow-product-slider">
+
+    <div class="rainbow-product-slider__header">
+        <div class="container">
+            <span class="rainbow-section-label">
+                <i class="fa-solid fa-sparkles"></i>
+                MORE FROM THIS RANGE
+            </span>
+            <h2>Explore The Full Collection</h2>
+        </div>
+    </div>
+
+    <div class="slider-track-wrapper">
+        <div class="slider-track" id="sliderTrack">
+
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-red.png') }}" alt="Red Pouch">
+                <span>Red</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-blue.png') }}" alt="Blue Pouch">
+                <span>Blue</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-yellow.png') }}" alt="Yellow Pouch">
+                <span>Yellow</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-green.png') }}" alt="Green Pouch">
+                <span>Green</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-pink.png') }}" alt="Pink Pouch">
+                <span>Pink</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-purple.png') }}" alt="Purple Pouch">
+                <span>Purple</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-orange.png') }}" alt="Orange Pouch">
+                <span>Orange</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-parrot.png') }}" alt="Parrot Pouch">
+                <span>Parrot</span>
+            </div>
+
+            {{-- duplicate set for seamless infinite loop --}}
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-red.png') }}" alt="Red Pouch">
+                <span>Red</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-blue.png') }}" alt="Blue Pouch">
+                <span>Blue</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-yellow.png') }}" alt="Yellow Pouch">
+                <span>Yellow</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-green.png') }}" alt="Green Pouch">
+                <span>Green</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-pink.png') }}" alt="Pink Pouch">
+                <span>Pink</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-purple.png') }}" alt="Purple Pouch">
+                <span>Purple</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-orange.png') }}" alt="Orange Pouch">
+                <span>Orange</span>
+            </div>
+            <div class="slider-item">
+                <img src="{{ asset('assets/front/images/rainbow/pouch-parrot.png') }}" alt="Parrot Pouch">
+                <span>Parrot</span>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- ==== / auto slider end ==== -->
+
+<!-- ==== packaging info start ==== -->
+<section class="rainbow-packaging">
+
+    <div class="container">
+
+        <div class="rainbow-packaging__header">
+            <span class="rainbow-section-label">
+                <i class="fa-solid fa-sparkles"></i>
+                BULK &amp; PACKAGING
+            </span>
+            <h2>Built For Every Scale Of Business</h2>
+        </div>
+
+        <div class="packaging-grid">
+
+            {{-- 100g --}}
+            <div class="packaging-card">
+                <span class="packaging-card__size">100g Pouch</span>
+                <ul>
+                    <li><i class="fa-solid fa-box"></i> 1kg Bunch &mdash; 10 Pouches</li>
+                    <li><i class="fa-solid fa-boxes-stacked"></i> 25kg Carton &mdash; 25 Bunches</li>
+                    <li><i class="fa-solid fa-truck-field"></i> 25kg Bag &mdash; 250 Pouches</li>
+                </ul>
+            </div>
+
+            {{-- 250g --}}
+            <div class="packaging-card">
+                <span class="packaging-card__size">250g Pouch</span>
+                <ul>
+                    <li><i class="fa-solid fa-box"></i> 2.5kg Bunch &mdash; 10 Pouches</li>
+                    <li><i class="fa-solid fa-boxes-stacked"></i> 25kg Carton &mdash; 10 Bunches</li>
+                    <li><i class="fa-solid fa-truck-field"></i> 25kg Bag &mdash; 100 Pouches</li>
+                </ul>
+            </div>
+
+            {{-- 500g --}}
+            <div class="packaging-card">
+                <span class="packaging-card__size">500g Pouch</span>
+                <ul>
+                    <li><i class="fa-solid fa-box"></i> 2.5kg Bunch &mdash; 5 Pouches</li>
+                    <li><i class="fa-solid fa-boxes-stacked"></i> 25kg Carton &mdash; 10 Bunches</li>
+                    <li><i class="fa-solid fa-truck-field"></i> 25kg Bag &mdash; 50 Pouches</li>
+                </ul>
+            </div>
+
+        </div>
+
+        {{-- Special bags --}}
+        <div class="packaging-special">
+
+            <div class="packaging-special__card">
+                <span class="packaging-special__badge">Elite Rangoli Bag</span>
+                <strong>25kg</strong>
+                <span>30 Shades Included</span>
+            </div>
+
+            <div class="packaging-special__card packaging-special__card--alt">
+                <span class="packaging-special__badge">Signature Rangoli Bag</span>
+                <strong>25kg</strong>
+                <span>30 Shades Included</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==== / packaging info end ==== -->
+
+            <!--  FOOTER START -->
+            @include('front.layouts.footer')
+            <!--FOOTER END -->
+
+        </div>
+    </div>
+    </div>
+@endsection
+
+
+/* =========================================================
+   RAINBOW COLORS
+   CATEGORY PAGE — FEATURED PRODUCT
+========================================================= */
+
+.rainbow-featured-product {
+    position: relative;
+    padding: 60px 0 110px;
+    background: #F7F5FB;
+    overflow: hidden;
+}
+
+.featured-product__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+/* Visual */
+
+.featured-product__visual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-product__ring {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 440px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 40px 90px rgba(41, 35, 69, .12);
+}
+
+.featured-product__ring::before {
+    content: "";
+    position: absolute;
+    inset: -14px;
+    border-radius: 50%;
+    border: 1px dashed rgba(41, 35, 69, .15);
+}
+
+.featured-product__ring img {
+    width: 55%;
+    height: auto;
+    filter: drop-shadow(0 25px 30px rgba(0, 0, 0, .18));
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+.featured-product__badge {
+    position: absolute;
+    bottom: 8%;
+    right: 2%;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 20px;
+    background: #292345;
+    border-radius: 50px;
+    color: #FDD200;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    box-shadow: 0 20px 40px rgba(41, 35, 69, .25);
+}
+
+/* Info */
+
+.featured-product__info h2 {
+    margin: 20px 0 0;
+    color: #292345;
+    font-size: clamp(30px, 3.5vw, 42px);
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -.5px;
+}
+
+.featured-product__info > p {
+    max-width: 480px;
+    margin: 20px 0 0;
+    color: #6F6A7D;
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+.featured-product__label {
+    display: block;
+    margin-bottom: 12px;
+    color: #8A8696;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Sizes */
+
+.featured-product__sizes {
+    margin-top: 34px;
+}
+
+.size-chips {
+    display: flex;
+    gap: 10px;
+}
+
+.size-chip {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1.5px solid rgba(41, 35, 69, .12);
+    background: #fff;
+    color: #6F6A7D;
+    font-size: 13.5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+.size-chip.active,
+.size-chip:hover {
+    background: #292345;
+    border-color: #292345;
+    color: #fff;
+}
+
+/* Colours */
+
+.featured-product__colours {
+    margin-top: 30px;
+}
+
+.colour-swatches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.swatch {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 1.5px rgba(41, 35, 69, .15);
+    cursor: pointer;
+    padding: 0;
+    transition: all .25s ease;
+}
+
+.swatch--white {
+    box-shadow: 0 0 0 1.5px rgba(41, 35, 69, .3);
+}
+
+.swatch:hover {
+    transform: translateY(-3px);
+}
+
+.swatch.active {
+    box-shadow: 0 0 0 2.5px #292345;
+    transform: scale(1.12);
+}
+
+.selected-colour-name {
+    display: inline-block;
+    margin-top: 14px;
+    color: #292345;
+    font-size: 13.5px;
+    font-weight: 700;
+}
+
+/* CTA button (reuses .rainbow-btn from About page) */
+
+.featured-product__info .rainbow-btn {
+    margin-top: 38px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media only screen and (max-width: 991px) {
+
+    .featured-product__inner {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .featured-product__ring {
+        width: 340px;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media only screen and (max-width: 575px) {
+
+    .rainbow-featured-product {
+        padding: 45px 0 80px;
+    }
+
+    .featured-product__ring {
+        width: 260px;
+    }
+
+    .featured-product__badge {
+        font-size: 11px;
+        padding: 10px 16px;
+    }
+
+    .size-chips {
+        flex-wrap: wrap;
+    }
+
+    .swatch {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* =========================================================
+   AUTO-MOVING PRODUCT SLIDER
+========================================================= */
+
+.rainbow-product-slider {
+    position: relative;
+    padding: 90px 0;
+    background: #292345;
+    overflow: hidden;
+}
+
+.rainbow-product-slider__header {
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.rainbow-product-slider__header .rainbow-section-label {
+    justify-content: center;
+}
+
+.rainbow-product-slider__header h2 {
+    margin: 16px 0 0;
+    color: #fff;
+    font-size: clamp(28px, 3.5vw, 38px);
+    font-weight: 800;
+    letter-spacing: -.5px;
+}
+
+.slider-track-wrapper {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.slider-track {
+    display: flex;
+    gap: 26px;
+    width: max-content;
+    animation: sliderScroll 28s linear infinite;
+}
+
+.slider-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes sliderScroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.slider-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 170px;
+    padding: 26px 18px;
+    background: rgba(255, 255, 255, .04);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 20px;
+    flex-shrink: 0;
+    transition: all .3s ease;
+}
+
+.slider-item:hover {
+    background: rgba(255, 255, 255, .07);
+    border-color: rgba(253, 210, 0, .3);
+    transform: translateY(-4px);
+}
+
+.slider-item img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, .25));
+}
+
+.slider-item span {
+    color: #C8C4D8;
+    font-size: 12.5px;
+    font-weight: 600;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media only screen and (max-width: 575px) {
+
+    .rainbow-product-slider {
+        padding: 60px 0;
+    }
+
+    .slider-item {
+        width: 130px;
+        padding: 20px 14px;
+    }
+
+    .slider-item img {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+/* =========================================================
+   PACKAGING & BULK INFO
+========================================================= */
+
+.rainbow-packaging {
+    position: relative;
+    padding: 100px 0;
+    background: #F7F5FB;
+}
+
+.rainbow-packaging__header {
+    max-width: 500px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.rainbow-packaging__header .rainbow-section-label {
+    justify-content: center;
+}
+
+.rainbow-packaging__header h2 {
+    margin: 16px 0 0;
+    color: #292345;
+    font-size: clamp(28px, 3.5vw, 38px);
+    font-weight: 800;
+    letter-spacing: -.5px;
+}
+
+.packaging-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 30px;
+}
+
+.packaging-card {
+    padding: 30px 28px;
+    background: #fff;
+    border: 1px solid rgba(41, 35, 69, .08);
+    border-radius: 22px;
+    transition: all .3s ease;
+}
+
+.packaging-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(41, 35, 69, .1);
+}
+
+.packaging-card__size {
+    display: block;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(41, 35, 69, .08);
+    color: #292345;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.packaging-card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.packaging-card li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: #6F6A7D;
+    font-size: 13.5px;
+    font-weight: 500;
+}
+
+.packaging-card li:last-child {
+    margin-bottom: 0;
+}
+
+.packaging-card li i {
+    color: #FDD200;
+    font-size: 13px;
+    width: 16px;
+}
+
+/* Special bags */
+
+.packaging-special {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.packaging-special__card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 28px 30px;
+    background: #292345;
+    border-radius: 22px;
+}
+
+.packaging-special__card--alt {
+    background: #211B38;
+}
+
+.packaging-special__badge {
+    position: absolute;
+}
+
+.packaging-special__card {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.packaging-special__card .packaging-special__badge {
+    position: static;
+    margin-bottom: 14px;
+    padding: 6px 14px;
+    border-radius: 30px;
+    background: rgba(253, 210, 0, .12);
+    color: #FDD200;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.packaging-special__card strong {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.packaging-special__card span:not(.packaging-special__badge) {
+    display: block;
+    margin-top: 6px;
+    color: #A9A4B8;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 991px) {
+    .packaging-grid { grid-template-columns: 1fr; }
+    .packaging-special { grid-template-columns: 1fr; }
+}
+
+
+
+
+

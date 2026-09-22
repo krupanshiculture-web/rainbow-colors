@@ -32,18 +32,47 @@
                 </button>
 
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#why-rainbow">Why Rainbow</a></li>
-                    <li><a href="#journey">Our Journey</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#get-in-touch">Contact</a></li>
+                    <li><a href="{{ url('/') }}#home">Home</a></li>
+                    <li><a href="{{ url('/about') }}">About</a></li>
+
+                    {{-- Products with dropdown --}}
+                    <li class="has-dropdown">
+                        <a href="{{ url('/products') }}">
+                            Products
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </a>
+
+                        <ul class="rainbow-dropdown">
+                            <li>
+                                <a href="{{ url('/products/pouch') }}">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    Pouch Range
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/products/container') }}">
+                                    <i class="fa-solid fa-jar"></i>
+                                    Container Range
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/products/box') }}">
+                                    <i class="fa-solid fa-box-open"></i>
+                                    Box Range
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="{{ url('/') }}#gallery">Gallery</a></li>
+                    <li><a href="{{ url('/') }}#distributorship">Distributorship</a></li>
+                    <li><a href="{{ url('/') }}#get-in-touch">Contact</a></li>
                 </ul>
             </nav>
 
 
             {{-- CTA --}}
-            <a href="#get-in-touch" class="rainbow-header__cta">
+            <a href="{{ url('/') }}#get-in-touch" class="rainbow-header__cta">
                 Enquire Now
                 <i class="fa-solid fa-arrow-right"></i>
             </a>

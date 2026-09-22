@@ -31,9 +31,9 @@
                                     </span>
 
                                     <h1>
-                                        WE&nbsp;CREATE &nbsp;
-                                        <span class="text-outline">COLOURS&nbsp;</span>FOR
-                                        EVERY
+                                        WE CREATE
+                                        <span class="text-outline">COLOURS</span>
+                                        FOR EVERY
                                         <span class="text-fill">CELEBRATION</span>
                                     </h1>
 
@@ -434,24 +434,24 @@
 
                         {{-- Header --}}
                         <div class="rainbow-why__header">
+    <div>
+        <span class="rainbow-section-label">
+            <i class="fa-solid fa-sparkles"></i>
+            WHY RAINBOW COLORS
+        </span>
 
-                            <span class="rainbow-section-label">
-                                <i class="fa-solid fa-sparkles"></i>
-                                WHY RAINBOW COLORS
-                            </span>
+        <h2>
+            MORE THAN
+            <span>JUST COLOUR</span>
+        </h2>
+    </div>
 
-                            <h2>
-                                MORE THAN
-                                <span>JUST COLOUR</span>
-                            </h2>
-
-                            <p>
-                                We bring together vibrant colours, thoughtful formulations
-                                and export-grade quality to make every celebration
-                                &mdash; and every business partnership &mdash; special.
-                            </p>
-
-                        </div>
+    <p>
+        We bring together vibrant colours, thoughtful formulations
+        and export-grade quality to make every celebration
+        &mdash; and every business partnership &mdash; special.
+    </p>
+</div>
 
 
                         {{-- Feature cards --}}
@@ -466,7 +466,7 @@
                                             <i class="fa-solid fa-award"></i>
                                         </div>
                                     </div>
-                                    <h3>17+ Years of Trust</h3>
+                                    <h3>19+ Years of Trust</h3>
                                     <p>Nearly two decades of proven quality, trusted by industry leaders since inception.
                                     </p>
                                     <span class="why-line yellow-line"></span>

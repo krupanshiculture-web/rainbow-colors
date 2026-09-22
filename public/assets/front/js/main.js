@@ -68,6 +68,7 @@
 			}
 		});
 
+		// Header scroll effect
 		window.addEventListener('scroll', function () {
 			const header = document.getElementById('rainbowHeader');
 			if (window.scrollY > 40) {
@@ -77,6 +78,7 @@
 			}
 		});
 
+		// Mobile nav elements
 		const navToggle = document.getElementById('rainbowNavToggle');
 		const navClose = document.getElementById('rainbowNavClose');
 		const nav = document.getElementById('rainbowNav');
@@ -85,7 +87,7 @@
 		function openNav() {
 			nav.classList.add('open');
 			overlay.classList.add('active');
-			navToggle.classList.add('is-hidden');   // hamburger hide - fakt close (X) button dekhay
+			navToggle.classList.add('is-hidden');
 			navToggle.setAttribute('aria-expanded', 'true');
 			document.body.style.overflow = 'hidden';
 		}
@@ -93,9 +95,14 @@
 		function closeNav() {
 			nav.classList.remove('open');
 			overlay.classList.remove('active');
-			navToggle.classList.remove('is-hidden'); // hamburger pachu dekhay
+			navToggle.classList.remove('is-hidden');
 			navToggle.setAttribute('aria-expanded', 'false');
 			document.body.style.overflow = '';
+
+			// also collapse any open dropdown when the whole nav closes
+			document.querySelectorAll('.has-dropdown.dropdown-open').forEach(el => {
+				el.classList.remove('dropdown-open');
+			});
 		}
 
 		navToggle.addEventListener('click', function () {
@@ -105,8 +112,29 @@
 		navClose.addEventListener('click', closeNav);
 		overlay.addEventListener('click', closeNav);
 
+		// Products dropdown toggle (mobile only)
+		const dropdownParent = document.querySelector('.has-dropdown');
+		if (dropdownParent) {
+			const dropdownLink = dropdownParent.querySelector(':scope > a');
+
+			dropdownLink.addEventListener('click', function (e) {
+				if (window.innerWidth <= 991) {
+					e.preventDefault();
+					e.stopPropagation();
+					dropdownParent.classList.toggle('dropdown-open');
+				}
+			});
+		}
+
+		// Close mobile nav when a link is clicked —
+		// but SKIP the "Products" dropdown toggle link itself,
+		// so opening/closing the dropdown doesn't close the whole drawer.
 		document.querySelectorAll('.rainbow-header__nav a').forEach(link => {
-			link.addEventListener('click', closeNav);
+			const isDropdownToggle = link.parentElement.classList.contains('has-dropdown');
+
+			if (!isDropdownToggle) {
+				link.addEventListener('click', closeNav);
+			}
 		});
 
 		// Hero product image auto-slider (fade cycle)
@@ -124,6 +152,44 @@
 				current = (current + 1) % images.length;
 				images[current].classList.add('active');
 			}, 3500); // dar 3.5 second e product badlaay
+		})();
+
+		// Featured product colour swatch switching
+		(function () {
+			const swatches = document.querySelectorAll('#colourSwatches .swatch');
+			const productImage = document.getElementById('featuredProductImage');
+			const colourName = document.getElementById('selectedColourName');
+
+			if (!swatches.length || !productImage) return;
+
+			swatches.forEach(swatch => {
+				swatch.addEventListener('click', () => {
+					swatches.forEach(s => s.classList.remove('active'));
+					swatch.classList.add('active');
+
+					productImage.style.opacity = '0';
+					productImage.style.transform = 'scale(.94)';
+
+					setTimeout(() => {
+						productImage.src = swatch.getAttribute('data-image');
+						productImage.style.opacity = '1';
+						productImage.style.transform = 'scale(1)';
+					}, 180);
+
+					if (colourName) {
+						colourName.textContent = swatch.getAttribute('data-name');
+					}
+				});
+			});
+
+			// Size chip selection
+			const sizeChips = document.querySelectorAll('.size-chip');
+			sizeChips.forEach(chip => {
+				chip.addEventListener('click', () => {
+					sizeChips.forEach(c => c.classList.remove('active'));
+					chip.classList.add('active');
+				});
+			});
 		})();
 
 		// 04. data background

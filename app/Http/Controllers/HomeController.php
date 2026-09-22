@@ -15,4 +15,24 @@ class HomeController extends Controller
     {
         return view('front.about');
     }
+
+    public function products()
+    {
+        return view('front.products');
+    }
+
+    public function pouch()
+    {
+        return view('front.pouch');
+    }
+
+    public function container()
+    {
+        return view('front.container');
+    }
+
+    public function box()
+    {
+        return view('front.box');
+    }
 }
