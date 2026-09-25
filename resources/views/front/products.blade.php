@@ -238,6 +238,179 @@
             </section>
             <!-- ==== / product ranges end ==== -->
 
+            <section class="rainbow-container-special" id="container-special">
+                <div class="container-special__glow container-special__glow--yellow"></div>
+                <div class="container-special__glow container-special__glow--pink"></div>
+
+                <div class="container">
+
+                    <div class="container-special__heading">
+                        <div>
+                            <span class="rainbow-section-label">
+                                <i class="fa-solid fa-sparkles"></i>
+                                WHAT MAKES IT SPECIAL
+                            </span>
+
+                            <h2>
+                                MORE THAN
+                                <span>JUST A CONTAINER.</span>
+                            </h2>
+                        </div>
+
+                        <p>
+                            Designed with thoughtful technology and carefully crafted
+                            colour performance, every Rainbow container brings a
+                            premium experience to every celebration.
+                        </p>
+                    </div>
+
+                    <div class="container-special__layout">
+
+                        <div class="container-special__features">
+
+                            <div class="container-special__feature">
+                                <span class="container-special__number">01</span>
+                                <div class="container-special__icon">
+                                    <i class="fa-solid fa-palette"></i>
+                                </div>
+                                <div>
+                                    <h3>10X Bold Shade</h3>
+                                    <p>
+                                        Rich and vibrant colour designed to create
+                                        a bold visual impact.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="container-special__feature">
+                                <span class="container-special__number">02</span>
+                                <div class="container-special__icon">
+                                    <i class="fa-solid fa-flask"></i>
+                                </div>
+                                <div>
+                                    <h3>Pure Essence Blend</h3>
+                                    <p>
+                                        A carefully crafted blend made for a
+                                        distinctive colour experience.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="container-special__feature">
+                                <span class="container-special__number">03</span>
+                                <div class="container-special__icon">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                </div>
+                                <div>
+                                    <h3>Silk Shine</h3>
+                                    <p>
+                                        Smooth visual character with a beautiful
+                                        silky finish.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="container-special__feature">
+                                <span class="container-special__number">04</span>
+                                <div class="container-special__icon">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                </div>
+                                <div>
+                                    <h3>Balanced Texture</h3>
+                                    <p>
+                                        Carefully balanced texture for a refined
+                                        and consistent experience.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="container-special__feature">
+                                <span class="container-special__number">05</span>
+                                <div class="container-special__icon">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <div>
+                                    <h3>Dry-Lock Technology</h3>
+                                    <p>
+                                        Advanced Dry-Lock technology featured in
+                                        the Rainbow container range.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="container-special__feature">
+                                <span class="container-special__number">06</span>
+                                <div class="container-special__icon">
+                                    <i class="fa-solid fa-leaf"></i>
+                                </div>
+                                <div>
+                                    <h3>Non-Toxic Blend</h3>
+                                    <p>
+                                        A non-toxic blend highlighted as one of the
+                                        key product characteristics.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="container-special__technology">
+
+                            <div class="container-special__tech-ring">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="container-special__tech-content">
+
+                                <span class="container-special__tech-label">
+                                    PREMIUM CONTAINER TECHNOLOGY
+                                </span>
+
+                                <h3>
+                                    INDIA'S FIRST
+                                    <strong>DRY-LOCK</strong>
+                                    TECHNOLOGY
+                                </h3>
+
+                                <div class="container-special__tech-line"></div>
+
+                                <p>
+                                    A distinctive technology highlighted as a key
+                                    feature of the Rainbow container range.
+                                </p>
+
+                                <div class="container-special__tech-badge">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <span>DRY-LOCK<br><strong>TECHNOLOGY</strong></span>
+                                </div>
+
+                            </div>
+
+                            <div class="container-special__tech-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="container-special__bottom">
+                        <span></span>
+                        <p>
+                            TECHNOLOGY MEETS COLOUR
+                        </p>
+                        <span></span>
+                    </div>
+
+                </div>
+            </section>
+
             <!-- ==== scented colours start ==== -->
             <section class="rainbow-scent-intro" id="fragrance">
 
@@ -400,6 +573,7 @@
 
             </section>
             <!-- ==== / scented colours end ==== -->
+
 
             <!-- ==== fragrance grid start ==== -->
             <section class="rainbow-scent-grid">
