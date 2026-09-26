@@ -64,9 +64,10 @@
                         </ul>
                     </li>
 
-                    <li><a href="{{ url('/') }}#gallery">Gallery</a></li>
-                    <li><a href="{{ url('/') }}#distributorship">Distributorship</a></li>
-                    <li><a href="{{ url('/') }}#get-in-touch">Contact</a></li>
+                    {{-- <li><a href="{{ url('/') }}#gallery">Gallery</a></li> --}}
+                    <li><a href="{{ url('/distributorship') }}">Distributorship</a></li>
+                    <li><a href="{{ url('/blog') }}">Blog</a></li>
+                    <li><a href="{{ url('/contact') }}">Contact</a></li>
                 </ul>
             </nav>
 

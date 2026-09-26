@@ -35,4 +35,19 @@ class HomeController extends Controller
     {
         return view('front.box');
     }
+
+    public function distributorship()
+    {
+        return view('front.distributorship');
+    }
+
+    public function contact()
+    {
+        return view('front.contact');
+    }
+
+    public function blog()
+    {
+        return view('front.blog');
+    }
 }

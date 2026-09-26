@@ -49,6 +49,7 @@
    <!-- Back to top area start here -->
    @include('front.layouts.scroll-up')
    <!-- Back to top area end here -->
+   @include('front.layouts.whatsapp')
    <!--<< All JS Plugins >>-->
    @include('front.layouts.script')
   

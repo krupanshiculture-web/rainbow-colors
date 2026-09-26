@@ -29,11 +29,11 @@
                         {{-- Explore --}}
                         <div class="footer-links">
                             <span class="footer-links__label">Explore</span>
-                            <a href="#about">About Us</a>
-                            <a href="#products">Products</a>
-                            <a href="#why-rainbow">Why Rainbow</a>
-                            <a href="#journey">Our Journey</a>
-                            <a href="#gallery">Gallery</a>
+                            <a href="{{ url('/') }}">Home</a>
+                            <a href="{{ url('/about') }}">About Us</a>
+                            <a href="{{ url('/products') }}">Products</a>
+                            <a href="#why-rainbow">Distributorship</a>
+                            <a href="#journey">Contact</a>
                         </div>
 
 
@@ -41,7 +41,7 @@
                         <div class="footer-unit-card">
                             <span class="footer-unit-card__badge">Unit 01</span>
                             <h4>Varun Minerals</h4>
-                            <a href="mailto:info.rainbowcolorss@gmail.com">info.rainbowcolorss@gmail.com</a>
+                            <a href="mailto:info.varunminerals@gmail.com">info.varunminerals@gmail.com</a>
                             <a href="tel:+917778884447">+91&ndash;777&ndash;888&ndash;4447</a>
                         </div>
 
@@ -50,7 +50,7 @@
                         <div class="footer-unit-card">
                             <span class="footer-unit-card__badge">Unit 02</span>
                             <h4>Varun Colours Pvt Ltd</h4>
-                            <a href="mailto:varuncolourspvtltd@gmail.com">varuncolourspvtltd@gmail.com</a>
+                            <a href="mailto:info.rainbowcolourss@gamil.com">info.rainbowcolourss@gamil.com</a>
                             <a href="tel:+917778884447">+91&ndash;777&ndash;888&ndash;4447</a>
                         </div>
 
