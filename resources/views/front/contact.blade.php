@@ -165,8 +165,25 @@
 
                             </div>
 
+                            @if (session('contact_success'))
+                                <div class="contact-success-popup" id="contactSuccessPopup">
+                                    <div class="contact-success-popup__icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
 
-                            <form class="rainbow-contact-form" action="#" method="POST">
+                                    <div class="contact-success-popup__content">
+                                        <strong>Message Sent Successfully</strong>
+                                        <span>{{ session('contact_success') }}</span>
+                                    </div>
+
+                                    <button type="button" class="contact-success-popup__close" id="contactSuccessClose"
+                                        aria-label="Close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                            @endif
+
+                            <form class="rainbow-contact-form" action="{{ route('contact.submit') }}" method="POST">
 
                                 @csrf
 
@@ -452,4 +469,22 @@
 
         </div>
     </div>
+    @if (session('contact_success'))
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const popup = document.getElementById('contactSuccessPopup');
+                const close = document.getElementById('contactSuccessClose');
+
+                if (popup && close) {
+                    close.addEventListener('click', function() {
+                        popup.style.display = 'none';
+                    });
+
+                    setTimeout(function() {
+                        popup.style.display = 'none';
+                    }, 5000);
+                }
+            });
+        </script>
+    @endif
 @endsection

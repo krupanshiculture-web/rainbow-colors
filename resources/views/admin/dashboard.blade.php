@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +52,7 @@
             font-size: 32px;
         }
 
-        .admin-content > p {
+        .admin-content>p {
             margin: 0;
             color: #777;
         }
@@ -126,6 +127,14 @@
             color: #292345;
         }
 
+        .dashboard-card--distributor {
+            border-top: 4px solid #36C96F;
+        }
+
+        .dashboard-card--contact {
+            border-top: 4px solid #20A4F3;
+        }
+
         @media (max-width: 767px) {
             .admin-header {
                 padding: 0 20px;
@@ -148,67 +157,82 @@
 
 <body>
 
-<header class="admin-header">
+    <header class="admin-header">
 
-    <img
-        src="{{ asset('assets/front/images/rainbow/logo.png') }}"
-        alt="Rainbow Colors"
-    >
+        <img src="{{ asset('assets/front/images/rainbow/logo.png') }}" alt="Rainbow Colors">
 
-    <form method="POST" action="{{ route('admin.logout') }}">
-        @csrf
+        <form method="POST" action="{{ route('admin.logout') }}">
+            @csrf
 
-        <button type="submit" class="logout-button">
-            Logout
-        </button>
-    </form>
+            <button type="submit" class="logout-button">
+                Logout
+            </button>
+        </form>
 
-</header>
+    </header>
 
-<main class="admin-content">
+    <main class="admin-content">
 
-    <h1>Welcome, {{ auth()->user()->name }}</h1>
+        <h1>Welcome, {{ auth()->user()->name }}</h1>
 
-    <p>Rainbow Colors Admin Panel</p>
+        <p>Rainbow Colors Admin Panel</p>
 
-    <div class="dashboard-grid">
+        <div class="dashboard-grid">
 
-        <div class="dashboard-card dashboard-card--blog">
-            <span>Blog Posts</span>
-            <h2>{{ \App\Models\Blog::count() }}</h2>
+            <div class="dashboard-card dashboard-card--blog">
+                <span>Blog Posts</span>
+                <h2>{{ \App\Models\Blog::count() }}</h2>
+            </div>
+
+            <div class="dashboard-card dashboard-card--products">
+                <span>Products</span>
+                <h2>3</h2>
+            </div>
+
+            <div class="dashboard-card dashboard-card--website">
+                <span>Website</span>
+                <h2>Live</h2>
+            </div>
+
+            <div class="dashboard-card dashboard-card--distributor">
+                <span>Distributor Enquiries</span>
+                <h2>{{ \App\Models\DistributorInquiry::count() }}</h2>
+            </div>
+
+            <div class="dashboard-card dashboard-card--contact">
+                <span>Contact Enquiries</span>
+
+                <h2>
+                    {{ \App\Models\ContactInquiry::count() }}
+                </h2>
+            </div>
+
         </div>
 
-        <div class="dashboard-card dashboard-card--products">
-            <span>Products</span>
-            <h2>3</h2>
+        <div class="dashboard-actions">
+
+            <h2>Quick Actions</h2>
+
+            <a href="{{ route('admin.blogs.index') }}" class="action-button">
+                Manage Blogs
+            </a>
+
+            <a href="{{ route('admin.distributor-inquiries.index') }}" class="action-button">
+                Distributor Enquiries
+            </a>
+
+            <a href="{{ url('/') }}" target="_blank" class="action-button">
+                View Website
+            </a>
+
+            <a href="{{ route('admin.contact-inquiries.index') }}" class="action-button">
+                Contact Enquiries
+            </a>
+
         </div>
 
-        <div class="dashboard-card dashboard-card--website">
-            <span>Website</span>
-            <h2>Live</h2>
-        </div>
-
-    </div>
-
-    <div class="dashboard-actions">
-
-        <h2>Quick Actions</h2>
-
-        <a href="{{ route('admin.blogs.index') }}" class="action-button">
-            Manage Blogs
-        </a>
-
-        <a
-            href="{{ url('/') }}"
-            target="_blank"
-            class="action-button"
-        >
-            View Website
-        </a>
-
-    </div>
-
-</main>
+    </main>
 
 </body>
+
 </html>

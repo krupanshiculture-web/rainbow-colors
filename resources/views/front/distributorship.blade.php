@@ -194,11 +194,26 @@
 
                         </div>
 
+                        @if (session('distributorship_success'))
+                            <div class="distributor-success-popup" id="distributorSuccessPopup">
+                                <div class="distributor-success-popup__icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
 
+                                <div class="distributor-success-popup__content">
+                                    <strong>Enquiry Sent Successfully</strong>
+                                    <span>{{ session('distributorship_success') }}</span>
+                                </div>
+
+                                <button type="button" class="distributor-success-popup__close"
+                                    id="distributorSuccessClose">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                        @endif
                         <div class="distributor-enquiry__form">
 
-                            <form action="#" method="POST">
-
+                            <form action="{{ route('distributorship.submit') }}" method="POST">
                                 @csrf
 
                                 <div class="distributor-form-grid">
@@ -320,6 +335,25 @@
                             </form>
 
                         </div>
+
+                        @if (session('distributorship_success'))
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    const popup = document.getElementById('distributorSuccessPopup');
+                                    const close = document.getElementById('distributorSuccessClose');
+
+                                    if (popup && close) {
+                                        close.addEventListener('click', function() {
+                                            popup.style.display = 'none';
+                                        });
+
+                                        setTimeout(function() {
+                                            popup.style.display = 'none';
+                                        }, 5000);
+                                    }
+                                });
+                            </script>
+                        @endif
 
                     </div>
 

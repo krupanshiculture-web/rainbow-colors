@@ -50,7 +50,7 @@
                         <div class="footer-unit-card">
                             <span class="footer-unit-card__badge">Unit 02</span>
                             <h4>Varun Colours Pvt Ltd</h4>
-                            <a href="mailto:info.rainbowcolourss@gamil.com">info.rainbowcolourss@gamil.com</a>
+                            <a href="mailto:info.rainbowcolourss@gamil.com">info.rainbowcolourss@gmail.com</a>
                             <a href="tel:+917778884447">+91&ndash;777&ndash;888&ndash;4447</a>
                         </div>
 
